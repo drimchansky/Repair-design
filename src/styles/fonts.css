@@ -1,21 +1,18 @@
-    /* fonts */
-    @font-face {
-      font-family: Nunito;
-      font-style: normal;
-      font-weight: normal;
-      src: local('Nunito'),
-           url('../fonts/Nunito-Regular.woff2') format('woff2'),
-           url('../fonts/Nunito-Regular.woff') format('woff'),
-           url('../fonts/Nunito-Regular.ttf'),
-           url('../fonts/Nunito-Regular.eot') format('eot');
-    }
-    /* @font-face {
-      font-family: Anton;
-      font-style:  normal;
-      font-weight: normal;
-      src: local('Anton'),
-           url('../assets/Anton-Regular.woff2') format('woff2'),
-           url('../assets/Anton-Regular.woff') format('woff'), 
-           url('../assets/Anton-Regular.ttf'),
-           url('../assets/Anton-Regular.eot') format('eot');
-    } */
+/* fonts */
+
+@font-face {
+  font-family: FuturaDemiC;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Anton'), url('../fonts/FuturaDemiCTT.woff2') format('woff2'),
+    url('../fonts/FuturaDemiCTT.woff') format('woff'), url('../fonts/FuturaDemiCTT.ttf'),
+    url('../fonts/FuturaDemiCTT.eot') format('eot');
+}
+@font-face {
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Anton'), url('../fonts/FuturaBookC.woff2') format('woff2'),
+    url('../fonts/FuturaBookC.woff') format('woff'), url('../fonts/FuturaBookC.ttf'),
+    url('../fonts/FuturaBookC.eot') format('eot');
+}

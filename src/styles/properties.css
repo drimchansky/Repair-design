@@ -1,7 +1,9 @@
 /* properties */
 :root {
-  --theme-bg: #16141a;
-  --theme-primary: #ecdede;
-  --logo-font: 'Anton', sans-serif;
-  --page-font: 'Nunito', sans-serif;
+  --dark: #131313;
+  --white: #d3d3d3;
+  --gold: #e3b873;
+  --darkgray: #464646;
+  --lightgray: #b2b2b2;
+  --header-font: FuturaDemiC;
 }
