@@ -1,7 +1,10 @@
-/* HEADER */
-.header {
+/* CONTAINER */
+.container {
 }
-/* HEADER MEDIA */
+/* CONTAINER MIXES */
+.header_container {
+}
+/* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
