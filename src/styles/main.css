@@ -1,9 +1,11 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
 @import './fonts.css';
+@import './properties.css';
 
 @import './page.css';
 @import './container.css';
 @import './header.css';
+@import './nav.css';
 @import './header-content.css';
 @import './button.css';

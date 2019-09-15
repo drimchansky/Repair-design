@@ -195,12 +195,27 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\FuturaDemiCTT.woff2":[["FuturaDemiCTT.9c47a3ac.woff2","fonts/FuturaDemiCTT.woff2"],"fonts/FuturaDemiCTT.woff2"],"./..\\fonts\\FuturaDemiCTT.woff":[["FuturaDemiCTT.1a966572.woff","fonts/FuturaDemiCTT.woff"],"fonts/FuturaDemiCTT.woff"],"./..\\fonts\\FuturaDemiCTT.ttf":[["FuturaDemiCTT.6b1c8fd4.ttf","fonts/FuturaDemiCTT.ttf"],"fonts/FuturaDemiCTT.ttf"],"./..\\fonts\\FuturaDemiCTT.eot":[["FuturaDemiCTT.bbb82310.eot","fonts/FuturaDemiCTT.eot"],"fonts/FuturaDemiCTT.eot"],"./..\\fonts\\FuturaBookC.woff2":[["FuturaBookC.d38d48d9.woff2","fonts/FuturaBookC.woff2"],"fonts/FuturaBookC.woff2"],"./..\\fonts\\FuturaBookC.woff":[["FuturaBookC.fd997580.woff","fonts/FuturaBookC.woff"],"fonts/FuturaBookC.woff"],"./..\\fonts\\FuturaBookC.ttf":[["FuturaBookC.b1965874.ttf","fonts/FuturaBookC.ttf"],"fonts/FuturaBookC.ttf"],"./..\\fonts\\FuturaBookC.eot":[["FuturaBookC.3b32edc3.eot","fonts/FuturaBookC.eot"],"fonts/FuturaBookC.eot"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/container.css":[function(require,module,exports) {
+},{"./..\\fonts\\FuturaDemiCTT.woff2":[["FuturaDemiCTT.9c47a3ac.woff2","fonts/FuturaDemiCTT.woff2"],"fonts/FuturaDemiCTT.woff2"],"./..\\fonts\\FuturaDemiCTT.woff":[["FuturaDemiCTT.1a966572.woff","fonts/FuturaDemiCTT.woff"],"fonts/FuturaDemiCTT.woff"],"./..\\fonts\\FuturaDemiCTT.ttf":[["FuturaDemiCTT.6b1c8fd4.ttf","fonts/FuturaDemiCTT.ttf"],"fonts/FuturaDemiCTT.ttf"],"./..\\fonts\\FuturaDemiCTT.eot":[["FuturaDemiCTT.bbb82310.eot","fonts/FuturaDemiCTT.eot"],"fonts/FuturaDemiCTT.eot"],"./..\\fonts\\FuturaBookC.woff2":[["FuturaBookC.d38d48d9.woff2","fonts/FuturaBookC.woff2"],"fonts/FuturaBookC.woff2"],"./..\\fonts\\FuturaBookC.woff":[["FuturaBookC.fd997580.woff","fonts/FuturaBookC.woff"],"fonts/FuturaBookC.woff"],"./..\\fonts\\FuturaBookC.ttf":[["FuturaBookC.b1965874.ttf","fonts/FuturaBookC.ttf"],"fonts/FuturaBookC.ttf"],"./..\\fonts\\FuturaBookC.eot":[["FuturaBookC.3b32edc3.eot","fonts/FuturaBookC.eot"],"fonts/FuturaBookC.eot"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/properties.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/page.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/container.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/header.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/nav.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -220,7 +235,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../../node_modules/normalize.css/normalize.css":"../node_modules/normalize.css/normalize.css","./fonts.css":"styles/fonts.css","./page.css":"styles/page.css","./container.css":"styles/container.css","./header.css":"styles/header.css","./header-content.css":"styles/header-content.css","./button.css":"styles/button.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../node_modules/normalize.css/normalize.css":"../node_modules/normalize.css/normalize.css","./fonts.css":"styles/fonts.css","./properties.css":"styles/properties.css","./page.css":"styles/page.css","./container.css":"styles/container.css","./header.css":"styles/header.css","./nav.css":"styles/nav.css","./header-content.css":"styles/header-content.css","./button.css":"styles/button.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -248,7 +263,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2407" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3502" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -423,110 +438,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}],"../node_modules/parcel-bundler/src/builtins/bundle-loader.js":[function(require,module,exports) {
-var getBundleURL = require('./bundle-url').getBundleURL;
-
-function loadBundlesLazy(bundles) {
-  if (!Array.isArray(bundles)) {
-    bundles = [bundles];
-  }
-
-  var id = bundles[bundles.length - 1];
-
-  try {
-    return Promise.resolve(require(id));
-  } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND') {
-      return new LazyPromise(function (resolve, reject) {
-        loadBundles(bundles.slice(0, -1)).then(function () {
-          return require(id);
-        }).then(resolve, reject);
-      });
-    }
-
-    throw err;
-  }
-}
-
-function loadBundles(bundles) {
-  return Promise.all(bundles.map(loadBundle));
-}
-
-var bundleLoaders = {};
-
-function registerBundleLoader(type, loader) {
-  bundleLoaders[type] = loader;
-}
-
-module.exports = exports = loadBundlesLazy;
-exports.load = loadBundles;
-exports.register = registerBundleLoader;
-var bundles = {};
-
-function loadBundle(bundle) {
-  var id;
-
-  if (Array.isArray(bundle)) {
-    id = bundle[1];
-    bundle = bundle[0];
-  }
-
-  if (bundles[bundle]) {
-    return bundles[bundle];
-  }
-
-  var type = (bundle.substring(bundle.lastIndexOf('.') + 1, bundle.length) || bundle).toLowerCase();
-  var bundleLoader = bundleLoaders[type];
-
-  if (bundleLoader) {
-    return bundles[bundle] = bundleLoader(getBundleURL() + bundle).then(function (resolved) {
-      if (resolved) {
-        module.bundle.register(id, resolved);
-      }
-
-      return resolved;
-    }).catch(function (e) {
-      delete bundles[bundle];
-      throw e;
-    });
-  }
-}
-
-function LazyPromise(executor) {
-  this.executor = executor;
-  this.promise = null;
-}
-
-LazyPromise.prototype.then = function (onSuccess, onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.then(onSuccess, onError);
-};
-
-LazyPromise.prototype.catch = function (onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.catch(onError);
-};
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/loaders/browser/css-loader.js":[function(require,module,exports) {
-module.exports = function loadCSSBundle(bundle) {
-  return new Promise(function (resolve, reject) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = bundle;
-
-    link.onerror = function (e) {
-      link.onerror = link.onload = null;
-      reject(e);
-    };
-
-    link.onload = function () {
-      link.onerror = link.onload = null;
-      resolve();
-    };
-
-    document.getElementsByTagName('head')[0].appendChild(link);
-  });
-};
-},{}],0:[function(require,module,exports) {
-var b=require("../node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("css",require("../node_modules/parcel-bundler/src/builtins/loaders/browser/css-loader.js"));b.load([]);
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/main.d2070829.js.map

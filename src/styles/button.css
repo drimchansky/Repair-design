@@ -1,5 +1,11 @@
 /* BUTTON */
+.button {
+}
 
+/* BUTTON MIXES */
+.nav_button {
+  display: none;
+}
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
 }
