@@ -467,12 +467,16 @@ template {
   color: var(--white);
   font-size: 0.8em;
   font-weight: bold;
-  margin: 0 20px 0 auto;
 }
 /* NAV MEDIA */
 @media screen and (min-width: 576px) {
+  .nav__number {
+    margin: 0 20px 0 auto;
+  }
 }
 @media screen and (min-width: 992px) {
+  .nav__inner {
+  }
 }
 @media screen and (min-width: 1200px) {
 }
@@ -498,11 +502,6 @@ template {
   font-size: 16px;
   z-index: 10;
   padding: 95px 0 70px 0;
-  display: -ms-grid;
-  display: grid;
-  align-content: center;
-  align-items: center;
-  justify-items: start;
 }
 .header-content__title {
   margin: 0;
@@ -512,13 +511,28 @@ template {
   font-size: 1.3em;
 }
 .header-content__caption {
+  font-size: 1.1em;
   max-width: 350px;
+  margin: 30px 0 0 0;
+}
+.header-content__btn-wrap {
+  margin-top: 50px;
 }
 .header-content__title_gold {
   color: var(--gold);
 }
 /* HEADER-CONTENT MEDIA */
 @media screen and (min-width: 576px) {
+  .header-content__inner {
+    font-size: 20px;
+    padding-left: 60px;
+    padding-bottom: 100px;
+  }
+  .header-content__title {
+  }
+  .header-content__caption {
+    font-size: 0.9em;
+  }
 }
 @media screen and (min-width: 992px) {
 }
@@ -532,6 +546,11 @@ template {
   text-transform: uppercase;
   color: var(--white);
   border-radius: 2px;
+  font-size: 16px;
+  transition: -webkit-filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+  transition: box-shadow 0.1s;
 }
 .button:hover {
   -webkit-filter: contrast(120%);
@@ -554,18 +573,31 @@ template {
 /* BUTTON MIXES */
 .nav_button {
   display: none;
-  width: 160px;
 }
 .header-content_button {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  margin-top: 1.1em;
   width: 100%;
+  margin-top: 1em;
 }
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
+  .button_fill {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  }
+  .button_fill:hover,
+  .button_fill:focus {
+    box-shadow: none;
+  }
   .nav_button {
     display: block;
+    width: 160px;
+    font-size: 0.8em;
+  }
+  .header-content_button {
+    max-width: 210px;
+    margin-left: 1em;
+  }
+  .header-content_button:first-child {
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 992px) {
