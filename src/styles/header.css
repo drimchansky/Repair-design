@@ -13,6 +13,38 @@
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
+  .header__instagram-link {
+    text-decoration: none;
+    writing-mode: vertical-lr;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--caption-font);
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--dark);
+    width: 80px;
+    z-index: 10;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .header__instagram-link:after {
+    content: '\2192';
+    margin-top: 20px;
+    transition: all 0.3s;
+    font-size: 2em;
+  }
+  .header__instagram-link:hover.header__instagram-link:after,
+  .header__instagram-link:focus.header__instagram-link:after {
+    transform: translateY(15px);
+  }
+
+  .header__scroll-down {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
 }

@@ -57,6 +57,7 @@
 @media screen and (min-width: 992px) {
   .header-content__inner {
     font-size: 34px;
+    padding-left: 100px;
   }
   .header-content__caption {
     font-size: 0.7em;
