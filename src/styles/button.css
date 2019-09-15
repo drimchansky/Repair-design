@@ -5,8 +5,6 @@
   text-transform: uppercase;
   color: var(--white);
   border-radius: 2px;
-
-  padding: 12px 0;
 }
 .button:hover {
   filter: contrast(120%);
@@ -19,9 +17,16 @@
 .button_transparent {
   background: transparent;
 }
+.button_thin {
+  padding: 7px 0;
+}
+.button_thick {
+  padding: 12px 0;
+}
 /* BUTTON MIXES */
 .nav_button {
   display: none;
+  width: 160px;
 }
 .header-content_button {
   justify-self: center;
@@ -30,6 +35,9 @@
 }
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
+  .nav_button {
+    display: block;
+  }
 }
 @media screen and (min-width: 992px) {
 }
