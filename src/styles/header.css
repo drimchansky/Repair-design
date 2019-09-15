@@ -63,14 +63,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotate(90deg);
     height: 30px;
     font-weight: bold;
     margin-left: 15px;
     width: 30px;
     border-radius: 50%;
     color: var(--gold);
-    border: 1.3px solid var(--gold);
+    border: 1.5px solid var(--gold);
   }
 }
 @media screen and (min-width: 1200px) {
