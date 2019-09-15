@@ -19,12 +19,13 @@
 }
 .button_transparent {
   background: transparent;
+  border: 1.3px solid var(--white);
 }
 .button_thin {
   padding: 7px 0;
 }
 .button_thick {
-  padding: 12px 0;
+  padding: 15px 0;
 }
 /* BUTTON MIXES */
 .nav_button {
