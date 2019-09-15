@@ -1,5 +1,13 @@
 /* HEADER */
 .header {
+  position: relative;
+  background: black center / cover url(../img/header-bg.png);
+}
+.header__instagram-link {
+  display: none;
+}
+.header__scroll-down {
+  display: none;
 }
 /* HEADER MEDIA */
 @media screen and (min-width: 576px) {

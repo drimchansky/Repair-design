@@ -6,6 +6,8 @@
 }
 /* CONTAINER MIXES */
 .header_container {
+  z-index: 2;
+  position: relative;
 }
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {

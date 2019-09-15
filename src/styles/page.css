@@ -6,7 +6,10 @@
   font-family: var(--main-font);
   overflow-x: hidden;
 }
-
+.page *:focus {
+  outline: 0;
+  outline: 3px solid var(--white);
+}
 /* PAGE MEDIA */
 @media screen and (min-width: 576px) {
 }

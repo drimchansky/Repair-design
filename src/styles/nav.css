@@ -27,6 +27,7 @@
 .nav__number {
   color: var(--white);
   font-size: 0.8em;
+  font-weight: bold;
 }
 /* NAV MEDIA */
 @media screen and (min-width: 576px) {
