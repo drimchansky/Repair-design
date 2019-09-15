@@ -43,7 +43,34 @@
   }
 
   .header__scroll-down {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    background: var(--dark);
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    height: 100px;
+    width: 250px;
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    text-decoration: none;
+    color: var(--white);
+    letter-spacing: 1px;
+  }
+  .header__scroll-down span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    height: 30px;
+    font-weight: bold;
+    margin-left: 15px;
+    width: 30px;
+    border-radius: 50%;
+    color: var(--gold);
+    border: 1.3px solid var(--gold);
   }
 }
 @media screen and (min-width: 1200px) {
