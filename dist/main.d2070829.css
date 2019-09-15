@@ -479,6 +479,9 @@ template {
   }
 }
 @media screen and (min-width: 1200px) {
+  .nav {
+    font-size: 20px;
+  }
 }
 
 /* HEADER-CONTENT */
@@ -516,7 +519,7 @@ template {
   margin: 30px 0 0 0;
 }
 .header-content__btn-wrap {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .header-content__title_gold {
   color: var(--gold);
@@ -524,7 +527,7 @@ template {
 /* HEADER-CONTENT MEDIA */
 @media screen and (min-width: 576px) {
   .header-content__inner {
-    font-size: 20px;
+    font-size: 24px;
     padding-left: 60px;
     padding-bottom: 100px;
   }
@@ -532,9 +535,16 @@ template {
   }
   .header-content__caption {
     font-size: 0.9em;
+    max-width: 500px;
   }
 }
 @media screen and (min-width: 992px) {
+  .header-content__inner {
+    font-size: 34px;
+  }
+  .header-content__caption {
+    font-size: 0.7em;
+  }
 }
 @media screen and (min-width: 1200px) {
 }
@@ -590,7 +600,7 @@ template {
   .nav_button {
     display: block;
     width: 160px;
-    font-size: 0.8em;
+    font-size: 14px;
   }
   .header-content_button {
     max-width: 210px;
