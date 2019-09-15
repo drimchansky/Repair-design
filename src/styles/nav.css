@@ -33,18 +33,47 @@
 }
 @media screen and (min-width: 992px) {
   .nav {
-    padding-left: 100px;
+  }
+  .nav__inner {
+    margin-left: 70px;
   }
   .nav__list {
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--main-font);
+    height: 100%;
+    flex: 1;
   }
   .nav__item {
+    list-style-type: none;
+    height: 100%;
   }
   .nav__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+    transition: all 0.2s linear;
+    font-size: 0.7em;
+    padding: 0 10px;
+    border-bottom: 1.5px solid var(--dark);
+  }
+  .nav__link:hover,
+  .nav__link:focus {
+    outline: none;
+    border-bottom: 1.5px solid var(--white);
   }
 }
 @media screen and (min-width: 1200px) {
   .nav {
     height: 10vh;
     font-size: 24px;
+  }
+  .nav__link {
+    font-size: 0.6em;
   }
 }
