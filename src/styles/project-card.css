@@ -1,5 +1,14 @@
 /* PROJECT-CARD */
-
+.project-card {
+}
+.project-card__list {
+}
+.project-card__item {
+}
+.project-card__item--active {
+}
+.project-card__slider-controller {
+}
 /* PROJECT-CARD MEDIA */
 @media screen and (min-width: 576px) {
 }

@@ -26,6 +26,12 @@
   font-size: 0.8em;
   font-weight: bold;
 }
+.nav__button {
+}
+
+/* NAV MIXES */
+.slider_nav {
+}
 /* NAV MEDIA */
 @media screen and (min-width: 576px) {
   .nav__number {

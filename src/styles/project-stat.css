@@ -1,5 +1,14 @@
 /* PROJECT-STAT */
-
+.project-stat {
+}
+.project-stat_big {
+}
+.project-stat_small {
+}
+.ptoject-stat__header {
+}
+.project-stat__description {
+}
 /* PAGE MEDIA */
 @media screen and (min-width: 576px) {
 }

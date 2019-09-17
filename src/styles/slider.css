@@ -1,5 +1,8 @@
 /* SLIDER */
-
+.slider {
+}
+.slider__wrap {
+}
 /* SLIDER MEDIA */
 @media screen and (min-width: 576px) {
 }
