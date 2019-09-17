@@ -1,15 +1,46 @@
 /* PROJECT-STAT */
 .project-stat {
+  list-style-type: none;
+  padding: 0;
 }
 .project-stat_big {
+  font-size: 20px;
+  text-align: center;
 }
 .project-stat_small {
+  font-size: 16px;
 }
+.project-stat_big .ptoject-stat__header {
+  font-size: 1.3em;
+}
+.project-stat_small .ptoject-stat__header {
+  font-size: 0.82em;
+}
+.project-stat_big .project-stat__description {
+  font-size: 0.8em;
+}
+.project-stat_small .project-stat__description {
+  font-size: 0.9em;
+}
+
 .ptoject-stat__header {
+  color: var(--gold);
+  font-family: var(--title-font);
+  text-transform: uppercase;
 }
 .project-stat__description {
+  color: var(--white);
+  margin: 0.5em auto 0 auto;
+  max-width: 300px;
 }
-/* PAGE MEDIA */
+
+/* PROJECT STAT MIXES */
+.project-card_project-stat.project-stat_small {
+}
+.project-card_project-stat.project-stat_big {
+  grid-column: 1 / span 2;
+}
+/* PROJET-STAT MEDIA */
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {

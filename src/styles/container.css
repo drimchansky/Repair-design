@@ -10,6 +10,8 @@
   position: relative;
 }
 .projects_container {
+  display: flex;
+  flex-direction: column;
 }
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
