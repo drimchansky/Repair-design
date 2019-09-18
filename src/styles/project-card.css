@@ -16,7 +16,7 @@
 }
 .project-card__item--active {
 }
-.project-card__slider-controller {
+.project-card__slider-pagination {
   display: none;
 }
 /* PROJECT-CARD MEDIA */
@@ -28,6 +28,12 @@
 @media screen and (min-width: 992px) {
   .project-card__item {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .project-card__slider-pagination {
+    display: block;
+    color: white;
+    text-align: left;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
