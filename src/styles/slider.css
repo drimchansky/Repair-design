@@ -59,7 +59,7 @@
 }
 @media screen and (min-width: 992px) {
   .slider {
-    width: 55%;
+    width: 65%;
   }
   .slider__item img {
     max-width: none;

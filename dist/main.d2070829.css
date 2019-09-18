@@ -841,6 +841,9 @@ template {
   }
 }
 @media screen and (min-width: 992px) {
+  .project-card__list {
+    width: 100%;
+  }
   .project-card__item {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
@@ -937,6 +940,7 @@ template {
   .project-stat_small .ptoject-stat__header,
   .project-stat_small .project-stat__description {
     padding-left: 0;
+    width: 90%;
   }
   .project-stat__description {
     margin: 0.5em 0 0 0;
@@ -1007,7 +1011,7 @@ template {
 }
 @media screen and (min-width: 992px) {
   .slider {
-    width: 55%;
+    width: 65%;
   }
   .slider__item img {
     max-width: none;

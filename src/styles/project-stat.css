@@ -66,6 +66,7 @@
   .project-stat_small .ptoject-stat__header,
   .project-stat_small .project-stat__description {
     padding-left: 0;
+    width: 90%;
   }
   .project-stat__description {
     margin: 0.5em 0 0 0;

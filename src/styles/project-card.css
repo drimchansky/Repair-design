@@ -26,6 +26,9 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .project-card__list {
+    width: 100%;
+  }
   .project-card__item {
     grid-template-columns: repeat(2, 1fr);
   }
