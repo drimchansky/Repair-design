@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="favicon.4b31270f.ico">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.ee592c90.css">
+  <link rel="stylesheet" href="main.2182aba4.css">
   <title>Design-company</title>
 
   <!-- Fix chrome mobile vh -->
@@ -68,12 +68,19 @@
 
   <!-- PROJECTS -->
   <section class="projects">
+    <nav class="nav slider_nav container">
+      <ul class="nav__list">
+        <li class="nav__item"><button class="nav__button nav__button--active">Rostov-on-Don, Admiral</button></li>
+        <li class="nav__item"><button class="nav__button">Sochi Thieves</button></li>
+        <li class="nav__item"><button class="nav__button">Rostov-on-Don Patriotic</button></li>
+      </ul>
+    </nav>
     <div class="container projects_container">
 
       <!-- PROJECT-CARD -->
       <article class="project-card">
         <ul class="project-card__list">
-          <li class="project-card__item project-card__item--active">
+          <li class="project-card__item" data-project="1">
 
             <!-- PROJECT-STATs -->
             <ul class="project-stat 
@@ -88,72 +95,60 @@
                        project-card_project-stat 
                        project-stat_small">
               <li class="ptoject-stat__header">City:</li>
-              <li class="project-stat__description">Rostov-on-Don LCD admiral</li>
+              <li class="project-stat__description" id="project-one">Rostov-on-Don LCD admiral</li>
             </ul>
 
             <ul class="project-stat 
                        project-card_project-stat 
                        project-stat_small">
               <li class="ptoject-stat__header">apartment area:</li>
-              <li class="project-stat__description">81 m2</li>
+              <li class="project-stat__description" id="project-one">81 m2</li>
             </ul>
 
             <ul class="project-stat 
                        project-card_project-stat 
                        project-stat_small">
               <li class="ptoject-stat__header">Repair time:</li>
-              <li class="project-stat__description">3.5 months</li>
+              <li class="project-stat__description" id="project-one">3.5 months</li>
             </ul>
 
             <ul class="project-stat 
                        project-card_project-stat 
                        project-stat_small">
               <li class="ptoject-stat__header">Repair Cost:</li>
-              <li class="project-stat__description">Upon request</li>
+              <li class="project-stat__description" id="project-one">Upon request</li>
             </ul>
-
-          </li><li class="project-card__slider-pagination">
-            <div class="swiper-pagination"></div>
           </li>
-          
         </ul>
       </article>
 
       <!-- SLIDER -->
       <aside class="slider">
-        <nav class="nav slider_nav">
-          <ul class="nav__list">
-            <li class="nav__item"><button class="nav__button nav__button--active">Rostov-on-Don, Admiral</button></li>
-            <li class="nav__item"><button class="nav__button">Sochi Thieves</button></li>
-            <li class="nav__item"><button class="nav__button">Rostov-on-Don Patriotic</button></li>
-          </ul>
-        </nav>
         <ul class="slider__list">
-          <div class="slider__item slider__item--active">
-            <!-- Slider main container -->
+          <li class="slider__item slider__item--active" data-project="1">
+
+            <!-- SWIPER-->
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" data-swiper-autoplay="6000">
-                  <img src="slider-image-1.639f21b7.png" alt="furniture">
+                  <img src="slider-image-1.639f21b7.png" alt="furniture" id="project-one">
                 </div>
                 <div class="swiper-slide" data-swiper-autoplay="6000">
-                  <img src="slider-image-2.48a98df6.png" alt="furniture">
+                  <img src="slider-image-2.48a98df6.png" alt="furniture" id="project-one">
                 </div>
               </div>
-              <!-- Add Arrows -->
+              <!-- SWIPER ARROWS -->
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-          </div>
-          <div class="slider__item"></div>
-          <div class="slider__item"></div>
+          </li>
         </ul>
       </aside>
     </div>
   </section>
 
 
-  <script src="js.4f4bebc0.js"></script>
+  <script src="js.411f4537.js"></script>
 </body>
 
 </html>

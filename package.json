@@ -12,7 +12,8 @@
   "author": "DRIMchansky",
   "license": "ISC",
   "dependencies": {
-    "swiper": "^5.0.1"
+    "swiper": "^5.0.1",
+    "switcher": "^1.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
