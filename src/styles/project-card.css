@@ -21,8 +21,20 @@
 }
 /* PROJECT-CARD MEDIA */
 @media screen and (min-width: 576px) {
+  .project-card__item {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (min-width: 992px) {
+  .project-card__item {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (min-width: 1200px) {
+  .project-card {
+    margin-top: 40px;
+  }
+  .project-card__item {
+    row-gap: 3em;
+  }
 }

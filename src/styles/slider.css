@@ -3,7 +3,7 @@
 }
 .slider__list {
   padding: 0;
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
   width: 100%;
   list-style-type: none;
 }
@@ -16,14 +16,22 @@
   min-height: 240px;
   height: auto;
   width: 100%;
+  max-width: 500px;
 }
 .slider__item--active {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 /* SLIDER MEDIA */
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
+  .slider {
+    width: 55%;
+  }
+  .slider__item img {
+    max-width: none;
+  }
 }
 @media screen and (min-width: 1200px) {
 }

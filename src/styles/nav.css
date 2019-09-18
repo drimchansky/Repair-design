@@ -40,7 +40,7 @@
 }
 .nav__button:focus {
   outline: none;
-  border-bottom: 2px dotted var(--gold);
+  border-bottom: 1px solid var(--gold);
 }
 .nav__button:hover {
   color: var(--gold);
@@ -52,6 +52,7 @@
 }
 .nav__button--active:hover {
   color: var(--gray);
+  border-bottom-color: var(--gray);
   opacity: 0.7;
 }
 

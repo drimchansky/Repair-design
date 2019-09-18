@@ -42,8 +42,34 @@
 }
 /* PROJET-STAT MEDIA */
 @media screen and (min-width: 576px) {
+  .project-card_project-stat.project-stat_big {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .project-stat_small .ptoject-stat__header,
+  .project-stat_small .project-stat__description {
+    text-align: left;
+    padding-left: 20px;
+  }
 }
 @media screen and (min-width: 992px) {
+  .project-stat_big {
+    font-size: 25px;
+  }
+  .project-stat_small {
+    font-size: 20px;
+  }
+  .project-card_project-stat.project-stat_big {
+    text-align: left;
+    grid-column: 1 / span 2;
+  }
+  .project-stat_small .ptoject-stat__header,
+  .project-stat_small .project-stat__description {
+    padding-left: 0;
+  }
+  .project-stat__description {
+    margin: 0.5em 0 0 0;
+  }
 }
 @media screen and (min-width: 1200px) {
 }
