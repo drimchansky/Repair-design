@@ -10,6 +10,8 @@
 }
 .slider__item {
   display: none;
+  display: flex;
+  justify-content: center;
 }
 .slider__item img {
   object-fit: cover;
@@ -19,11 +21,6 @@
   max-width: 500px;
   margin: 0 auto;
 }
-.slider__item--active {
-  display: flex;
-  justify-content: center;
-}
-
 .swiper-container {
   width: 100%;
   height: 100%;

@@ -42,6 +42,10 @@
 }
 /* PROJET-STAT MEDIA */
 @media screen and (min-width: 576px) {
+  .project-stat__description {
+    max-width: none;
+    padding-right: 20px;
+  }
   .project-card_project-stat.project-stat_big {
     grid-column: 1;
     grid-row: 1 / span 2;
