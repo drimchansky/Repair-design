@@ -1,5 +1,6 @@
 /* SLIDER */
 .slider {
+  font-size: 16px;
 }
 .slider__list {
   padding: 0;
@@ -31,8 +32,25 @@
   margin: 5px;
   background: var(--white);
 }
+.swiper-button-next,
+.swiper-button-prev {
+  outline: 2px;
+  background: var(--gold);
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: var(--white);
+  font-size: 1.5em;
+}
 /* SLIDER MEDIA */
 @media screen and (min-width: 576px) {
+  .slider {
+    font-size: 22px;
+  }
 }
 @media screen and (min-width: 992px) {
   .slider {

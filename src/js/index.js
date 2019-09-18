@@ -2,7 +2,7 @@ import './scripts';
 
 import Swiper from 'swiper';
 
-var mySwiper = new Swiper('.swiper-container', {
+let mySwiper = new Swiper('.swiper-container', {
   autoplay: {
     speed: 3000,
     delay: 5000,
