@@ -430,13 +430,16 @@ template {
 }
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
+  .projects_container {
+    padding-top: 20px;
+  }
 }
 @media screen and (min-width: 992px) {
   .projects_container {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 80px;
+    padding-top: 15px;
     padding-bottom: 80px;
   }
 }
@@ -564,7 +567,7 @@ template {
 }
 .nav__button:focus {
   outline: none;
-  border-bottom: 1px solid var(--gold);
+  border-bottom: 2px solid var(--white);
 }
 .nav__button:hover {
   color: var(--gold);
@@ -632,6 +635,9 @@ template {
   .nav__link:focus {
     outline: none;
     border-bottom: 1.5px solid var(--white);
+  }
+  .slider_nav {
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
