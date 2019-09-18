@@ -11,7 +11,9 @@
   },
   "author": "DRIMchansky",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "swiper": "^5.0.1"
+  },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
     "eslint": "^6.2.2",

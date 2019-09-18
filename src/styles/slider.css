@@ -8,7 +8,6 @@
   list-style-type: none;
 }
 .slider__item {
-  opacity: 0.2;
   display: none;
 }
 .slider__item img {
@@ -21,6 +20,16 @@
 .slider__item--active {
   display: flex;
   justify-content: center;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination-bullet {
+  padding: 5px;
+  margin: 5px;
+  background: var(--white);
 }
 /* SLIDER MEDIA */
 @media screen and (min-width: 576px) {
