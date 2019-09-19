@@ -9,7 +9,6 @@
   list-style-type: none;
 }
 .slider__item {
-  display: none;
   display: flex;
   justify-content: center;
 }
@@ -28,11 +27,6 @@
 .swiper-slide {
   display: flex;
   justify-content: center;
-}
-.swiper-pagination-bullet {
-  padding: 5px;
-  margin: 5px;
-  background: var(--white);
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -60,6 +54,23 @@
   }
   .slider__item img {
     max-width: none;
+  }
+  .swiper-pagination {
+    position: relative;
+  }
+  .swiper-pagination-bullet {
+    display: inline-flex;
+    padding: 5px;
+    margin: 0 5px 0 5px;
+    border-radius: 50%;
+    background: var(--white);
+  }
+  .swiper-next-custom,
+  .swiper-prev-custom {
+    font-size: 2em;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
   }
 }
 @media screen and (min-width: 1200px) {

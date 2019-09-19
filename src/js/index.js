@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 
 let mySwiper = new Swiper('.swiper-container', {
+  loop: true,
   autoplay: {
     speed: 3000,
     delay: 5000,

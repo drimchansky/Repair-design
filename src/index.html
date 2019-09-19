@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="icon" href="img/favicon.ico" />
+  <link rel="icon" href="img/favicon-1.ico" />
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css" />
-  <title>Design-company</title>
+  <title>Repair-design</title>
 
   <!-- Fix chrome mobile vh -->
   <script>
@@ -78,6 +78,16 @@
 
   <!-- PROJECTS -->
   <section class="projects">
+    <nav class="nav slider_nav container">
+      <ul class="nav__list">
+        <li class="nav__item"><button class="nav__button nav__button--active not-working-yet"
+            data-title="not working yet :(">Rostov-on-Don, Admiral</button></li>
+        <li class="nav__item"><button class="nav__button not-working-yet" data-title="not working yet :(">Sochi
+            Thieves</button></li>
+        <li class="nav__item"><button class="nav__button not-working-yet" data-title="not working yet :(">Rostov-on-Don
+            Patriotic</button></li>
+      </ul>
+    </nav>
     <div class="container projects_container">
 
       <!-- PROJECT-CARD -->
@@ -122,6 +132,11 @@
               <li class="project-stat__description" id="project-one">Upon request</li>
             </ul>
           </li>
+          <div class="project-card__slider-pagination">
+            <div class="swiper-prev-custom not-working-yet" data-title="not working yet :(">&#8592</div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-next-custom not-working-yet" data-title="not working yet :(">&#8594</div>
+          </div>
         </ul>
       </article>
 
@@ -140,6 +155,7 @@
                   <img src="./img/slider-image-2.png" alt="furniture" id="project-one">
                 </div>
               </div>
+
               <!-- SWIPER ARROWS -->
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
