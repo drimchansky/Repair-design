@@ -14,6 +14,9 @@
   flex-direction: column;
 }
 .container_control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {

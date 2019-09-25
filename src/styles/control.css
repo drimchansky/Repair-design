@@ -1,5 +1,6 @@
 /* CONTROL */
 .control {
+  background: linear-gradient(to bottom, var(--dark-gray) 50%, var(--white) 50%);
 }
 .control__description {
 }
