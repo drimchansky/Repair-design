@@ -13,6 +13,8 @@
   display: flex;
   flex-direction: column;
 }
+.container_control {
+}
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
   .projects_container {

@@ -260,12 +260,27 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/control.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/title.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/form.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/main.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../../node_modules/normalize.css/normalize.css":"../node_modules/normalize.css/normalize.css","../../node_modules/swiper/css/swiper.min.css":"../node_modules/swiper/css/swiper.min.css","./fonts.css":"styles/fonts.css","./properties.css":"styles/properties.css","./page.css":"styles/page.css","./container.css":"styles/container.css","./not-working-yet.css":"styles/not-working-yet.css","./header.css":"styles/header.css","./nav.css":"styles/nav.css","./header-content.css":"styles/header-content.css","./button.css":"styles/button.css","./projects.css":"styles/projects.css","./project-card.css":"styles/project-card.css","./project-stat.css":"styles/project-stat.css","./slider.css":"styles/slider.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../node_modules/normalize.css/normalize.css":"../node_modules/normalize.css/normalize.css","../../node_modules/swiper/css/swiper.min.css":"../node_modules/swiper/css/swiper.min.css","./fonts.css":"styles/fonts.css","./properties.css":"styles/properties.css","./page.css":"styles/page.css","./container.css":"styles/container.css","./not-working-yet.css":"styles/not-working-yet.css","./header.css":"styles/header.css","./nav.css":"styles/nav.css","./header-content.css":"styles/header-content.css","./button.css":"styles/button.css","./projects.css":"styles/projects.css","./project-card.css":"styles/project-card.css","./project-stat.css":"styles/project-stat.css","./slider.css":"styles/slider.css","./control.css":"styles/control.css","./title.css":"styles/title.css","./form.css":"styles/form.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

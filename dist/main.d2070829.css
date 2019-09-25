@@ -428,6 +428,8 @@ template {
   display: flex;
   flex-direction: column;
 }
+.container_control {
+}
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
   .projects_container {
@@ -1046,6 +1048,51 @@ template {
     cursor: pointer;
     position: relative;
   }
+}
+@media screen and (min-width: 1200px) {
+}
+
+/* CONTROL */
+.control {
+}
+.control__description {
+}
+/* CONTROL MEDIA */
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}
+
+/* TITLE */
+.title {
+}
+.title__text {
+}
+.title__image {
+}
+/* TOTLE MIXES */
+.title_control {
+}
+/* TITLE MEDIA */
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}
+
+/* FORM */
+.form {
+}
+/* FORM MIXES */
+.form_control {
+}
+/* FORM */
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 992px) {
 }
 @media screen and (min-width: 1200px) {
 }
