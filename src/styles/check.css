@@ -1,0 +1,72 @@
+/* CHECK */
+
+.check {
+  padding-left: 1.2em;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.check__input:focus {
+  outline: none;
+}
+
+.check__box {
+  position: absolute;
+  margin-left: -1.2em;
+  width: 1em;
+  height: 1em;
+}
+
+.check__focus {
+  fill: none;
+}
+
+.check__square {
+  fill: #ffff;
+  stroke: var(--gold);
+  stroke-width: 1px;
+}
+
+.check__mark {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2px;
+}
+
+/* Checked */
+
+.check__input:checked + * .check__square {
+  fill: var(--gold);
+}
+
+/* Focused */
+
+.check__input:focus + * .check__focus {
+  fill: var(--gold);
+}
+
+/* Disabled */
+
+.check__input:disabled + * .check__square {
+  stroke: #9b9b9b;
+}
+
+.check__input:checked:disabled + * .check__square {
+  fill: #9b9b9b;
+}
+/* CHECK MIXES */
+.check_form {
+  margin-top: 20px;
+}
+/* CHECK MEDIA */
+@media screen and (min-width: 992px) {
+  .check_form {
+    order: 10;
+    width: 100%;
+    text-align: center;
+  }
+}

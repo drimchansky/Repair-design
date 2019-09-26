@@ -15,3 +15,37 @@
 @import './project-card.css';
 @import './project-stat.css';
 @import './slider.css';
+@import './control.css';
+@import './title.css';
+@import './form.css';
+@import './video.css';
+@import './check.css';
+
+/* CSS DEGUB SNIPPET  */
+/* * {
+  background-color: rgba(255, 0, 0, 0.2) !important;
+}
+* * {
+  background-color: rgba(0, 255, 0, 0.2) !important;
+}
+* * * {
+  background-color: rgba(0, 0, 255, 0.2) !important;
+}
+* * * * {
+  background-color: rgba(255, 0, 255, 0.2) !important;
+}
+* * * * * {
+  background-color: rgba(0, 255, 255, 0.2) !important;
+}
+* * * * * * {
+  background-color: rgba(255, 255, 0, 0.2) !important;
+}
+* * * * * * * {
+  background-color: rgba(255, 0, 0, 0.2) !important;
+}
+* * * * * * * * {
+  background-color: rgba(0, 255, 0, 0.2) !important;
+}
+* * * * * * * * * {
+  background-color: rgba(0, 0, 255, 0.2) !important;
+} */

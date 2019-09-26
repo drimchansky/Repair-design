@@ -35,6 +35,9 @@
   width: 100%;
   margin-top: 1em;
 }
+.button_form {
+  margin-top: 1.5em;
+}
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
   .button_fill {
@@ -58,6 +61,9 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .button_form {
+    width: 200px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .button_thin {
