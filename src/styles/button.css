@@ -42,8 +42,9 @@
 }
 .types_button {
   position: absolute;
-  bottom: -20px;
+  bottom: -28px;
   left: 0;
+  padding: 11px;
 }
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
@@ -70,6 +71,9 @@
 @media screen and (min-width: 992px) {
   .button_form {
     width: 200px;
+  }
+  .types_button {
+    left: -15px;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -3,6 +3,7 @@
   font-size: 16px;
 }
 .types__list {
+  margin: 60px 0 0 0;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -50,8 +51,21 @@
 
 /* TYPES MEDIA */
 @media screen and (min-width: 576px) {
+  .types {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 992px) {
+  .types__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .types__item:not(:first-child) {
+    margin-top: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .types__caption {
+    left: 25px;
+  }
 }
