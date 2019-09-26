@@ -193,12 +193,18 @@
       <!-- FORM -->
       <form class="form form_control">
 
-        <label class="form__label" for="name-field">Name</label>
-        <input class="form__input" type="text" id="name-field" placeholder="What is your name:" />
+        <div class="form__field form__field_control">
+          <label class="form__label" for="name-field">Name</label>
+          <input class="form__input" type="text" id="name-field" placeholder="What is your name:" />
+        </div>
 
-        <label class="form__label" for="email-field">E-mail</label>
-        <input class="form__input" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" id="email-field"
-          placeholder="Your e-mail:">
+        <div class="form__field form__field_control">
+          <label class="form__label" for="email-field">E-mail</label>
+          <input class="form__input" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" id="email-field"
+            placeholder="Your e-mail:">
+        </div>
+
+
 
         <label class="check check_form">
           <input class="check__input" type="checkbox">

@@ -60,6 +60,13 @@
 }
 /* CHECK MIXES */
 .check_form {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 /* CHECK MEDIA */
+@media screen and (min-width: 992px) {
+  .check_form {
+    order: 10;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -2,13 +2,20 @@
 .form {
   display: flex;
   flex-direction: column;
-  color: var(--white);
+  max-width: 800px;
+}
+.form__field:not(:first-child) {
+  margin-top: 10px;
+}
+.form__field_control {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 230px;
 }
 .form__label {
-  display: block;
-}
-.form__label:not(:first-child) {
-  margin-top: 20px;
+  top: 0;
+  right: 100%;
 }
 .form__input {
   border: none;
@@ -28,12 +35,22 @@
 }
 /* FORM MIXES */
 .form_control {
+  color: var(--white);
   margin-top: 30px;
 }
 /* FORM */
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
+  .form_control {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--dark);
+  }
+  .form__field:not(:first-child) {
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
 }

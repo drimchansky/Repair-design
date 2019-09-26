@@ -33,6 +33,10 @@
 @media screen and (min-width: 992px) {
   .control {
     font-size: 20px;
+    background: linear-gradient(to top, #fff 60%, var(--dark-gray) 40%);
+  }
+  .control__description {
+    color: var(--dark);
   }
 }
 @media screen and (min-width: 1200px) {
