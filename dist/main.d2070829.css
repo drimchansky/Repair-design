@@ -435,9 +435,11 @@ template {
   align-items: center;
 }
 .types_container {
-  padding: 25px 0 50px 0;
+  padding: 25px 0 100px 0;
 }
 .timeline_container {
+  display: flex;
+  justify-content: center;
 }
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
@@ -1188,14 +1190,13 @@ template {
   flex-direction: column;
   max-width: 800px;
 }
-.form__field:not(:first-child) {
-  margin-top: 10px;
-}
-.form__field_control {
+.form__field {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-width: 230px;
+}
+.form__field:not(:first-child) {
+  margin-top: 10px;
 }
 .form__label {
   top: 0;
@@ -1233,6 +1234,13 @@ template {
 .form_control {
   color: var(--white);
   margin-top: 30px;
+}
+.form__field_control {
+  min-width: 230px;
+}
+.form_timeline {
+}
+.form__field_timeline {
 }
 /* FORM */
 @media screen and (min-width: 576px) {
@@ -1481,6 +1489,24 @@ template {
   .types__caption {
     left: 25px;
   }
+}
+
+/* TIMELINE */
+.timeline {
+  padding: 30px 0 50px 0;
+}
+.timeline__list {
+  display: none;
+}
+.timeline__item {
+}
+
+/* TIMELINE */
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
 }
 
 /* CSS DEGUB SNIPPET  */

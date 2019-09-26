@@ -290,12 +290,17 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/sections/timeline.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/main.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"../../node_modules/normalize.css/normalize.css":"../node_modules/normalize.css/normalize.css","../../node_modules/swiper/css/swiper.min.css":"../node_modules/swiper/css/swiper.min.css","./fonts.css":"styles/fonts.css","./properties.css":"styles/properties.css","./sections/page.css":"styles/sections/page.css","./container.css":"styles/container.css","./not-working-yet.css":"styles/not-working-yet.css","./sections/header.css":"styles/sections/header.css","./nav.css":"styles/nav.css","./header-content.css":"styles/header-content.css","./button.css":"styles/button.css","./single/projects.css":"styles/single/projects.css","./single/project-card.css":"styles/single/project-card.css","./single/project-stat.css":"styles/single/project-stat.css","./sections/slider.css":"styles/sections/slider.css","./sections/control.css":"styles/sections/control.css","./title.css":"styles/title.css","./form.css":"styles/form.css","./single/video.css":"styles/single/video.css","./check.css":"styles/check.css","./sections/types.css":"styles/sections/types.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../../node_modules/normalize.css/normalize.css":"../node_modules/normalize.css/normalize.css","../../node_modules/swiper/css/swiper.min.css":"../node_modules/swiper/css/swiper.min.css","./fonts.css":"styles/fonts.css","./properties.css":"styles/properties.css","./sections/page.css":"styles/sections/page.css","./container.css":"styles/container.css","./not-working-yet.css":"styles/not-working-yet.css","./sections/header.css":"styles/sections/header.css","./nav.css":"styles/nav.css","./header-content.css":"styles/header-content.css","./button.css":"styles/button.css","./single/projects.css":"styles/single/projects.css","./single/project-card.css":"styles/single/project-card.css","./single/project-stat.css":"styles/single/project-stat.css","./sections/slider.css":"styles/sections/slider.css","./sections/control.css":"styles/sections/control.css","./title.css":"styles/title.css","./form.css":"styles/form.css","./single/video.css":"styles/single/video.css","./check.css":"styles/check.css","./sections/types.css":"styles/sections/types.css","./sections/timeline.css":"styles/sections/timeline.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -323,7 +328,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "20638" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "21654" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

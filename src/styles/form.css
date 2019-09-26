@@ -4,14 +4,13 @@
   flex-direction: column;
   max-width: 800px;
 }
-.form__field:not(:first-child) {
-  margin-top: 10px;
-}
-.form__field_control {
+.form__field {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-width: 230px;
+}
+.form__field:not(:first-child) {
+  margin-top: 10px;
 }
 .form__label {
   top: 0;
@@ -37,6 +36,13 @@
 .form_control {
   color: var(--white);
   margin-top: 30px;
+}
+.form__field_control {
+  min-width: 230px;
+}
+.form_timeline {
+}
+.form__field_timeline {
 }
 /* FORM */
 @media screen and (min-width: 576px) {
