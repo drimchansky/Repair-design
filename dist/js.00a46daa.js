@@ -9947,10 +9947,66 @@ if (typeof Swiper.use === 'undefined') {
 Swiper.use(components);
 var _default = Swiper;
 exports.default = _default;
-},{"dom7/dist/dom7.modular":"../node_modules/dom7/dist/dom7.modular.js","ssr-window":"../node_modules/ssr-window/dist/ssr-window.esm.js"}],"js/index.js":[function(require,module,exports) {
+},{"dom7/dist/dom7.modular":"../node_modules/dom7/dist/dom7.modular.js","ssr-window":"../node_modules/ssr-window/dist/ssr-window.esm.js"}],"js/video.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function Videos() {
+  var videos = document.querySelectorAll('.video');
+
+  for (var i = 0; i < videos.length; i++) {
+    setupVideo(videos[i]);
+  }
+}
+
+function createIframe(id) {
+  var iframe = document.createElement('iframe');
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('allow', 'autoplay');
+  iframe.setAttribute('src', generateURL(id));
+  iframe.classList.add('video__media');
+  return iframe;
+}
+
+function setupVideo(video) {
+  var link = video.querySelector('.video__link');
+  var media = video.querySelector('.video__media');
+  var button = video.querySelector('.video__button');
+  var id = parseMediaURL(media);
+  video.addEventListener('click', function () {
+    var iframe = createIframe(id);
+    link.remove();
+    button.remove();
+    video.appendChild(iframe);
+  });
+  link.removeAttribute('href');
+  video.classList.add('video--enabled');
+}
+
+function parseMediaURL(media) {
+  var regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+  var url = media.src;
+  var match = url.match(regexp);
+  return match[1];
+}
+
+function generateURL(id) {
+  var query = '?rel=0&showinfo=0&autoplay=1';
+  return "https://www.youtube.com/embed/".concat(id).concat(query);
+}
+
+var _default = Videos;
+exports.default = _default;
+},{}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _swiper = _interopRequireDefault(require("swiper"));
+
+var _video = _interopRequireDefault(require("./video"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9973,7 +10029,8 @@ var mySwiper = new _swiper.default('.swiper-container', {
     onlyInViewport: false
   }
 });
-},{"swiper":"../node_modules/swiper/js/swiper.esm.bundle.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+(0, _video.default)();
+},{"swiper":"../node_modules/swiper/js/swiper.esm.bundle.js","./video":"js/video.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

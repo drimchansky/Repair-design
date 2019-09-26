@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import Videos from './video';
 
 let mySwiper = new Swiper('.swiper-container', {
   loop: true,
@@ -19,3 +20,5 @@ let mySwiper = new Swiper('.swiper-container', {
     onlyInViewport: false,
   },
 });
+
+Videos();

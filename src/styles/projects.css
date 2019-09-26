@@ -1,7 +1,7 @@
 /* PROJECTS */
 .projects {
   background: var(--dark-gray);
-  padding: 30px 0;
+  padding: 30px 0 40px;
 }
 
 @media screen and (min-width: 576px) {
