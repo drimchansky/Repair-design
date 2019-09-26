@@ -26,7 +26,7 @@
 }
 
 .check__square {
-  fill: #ffffff;
+  fill: #ffff;
   stroke: var(--gold);
   stroke-width: 1px;
 }

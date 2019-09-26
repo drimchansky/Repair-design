@@ -2,6 +2,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  color: var(--white);
 }
 .form__label {
   display: block;
@@ -12,16 +13,22 @@
 .form__input {
   border: none;
   padding: 5px 0;
+  color: inherit;
   border-bottom: 2px solid var(--white);
   transition: all 0.2s;
+  background: inherit;
+}
+.form__input::placeholder {
+  color: inherit;
 }
 
 .form__input:focus {
   outline: none;
-  border-bottom: 2px solid var(--dark);
+  border-bottom: 2px solid var(--gold);
 }
 /* FORM MIXES */
 .form_control {
+  margin-top: 30px;
 }
 /* FORM */
 @media screen and (min-width: 576px) {

@@ -1060,7 +1060,7 @@ template {
 
 /* CONTROL */
 .control {
-  /* background: linear-gradient(to bottom, var(--dark-gray) 95%, var(--white) 5%); */
+  background: linear-gradient(to bottom, var(--dark-gray) 93%, #fff 7%);
   font-size: 16px;
   padding: 30px 0;
 }
@@ -1087,6 +1087,7 @@ template {
 @media screen and (min-width: 576px) {
   .control {
     font-size: 18px;
+    background: linear-gradient(to bottom, var(--dark-gray) 94%, #fff 6%);
   }
 }
 @media screen and (min-width: 992px) {
@@ -1157,6 +1158,7 @@ template {
 .form {
   display: flex;
   flex-direction: column;
+  color: var(--white);
 }
 .form__label {
   display: block;
@@ -1167,16 +1169,34 @@ template {
 .form__input {
   border: none;
   padding: 5px 0;
+  color: inherit;
   border-bottom: 2px solid var(--white);
   transition: all 0.2s;
+  background: inherit;
+}
+.form__input::-webkit-input-placeholder {
+  color: inherit;
+}
+.form__input::-moz-placeholder {
+  color: inherit;
+}
+.form__input:-ms-input-placeholder {
+  color: inherit;
+}
+.form__input::-ms-input-placeholder {
+  color: inherit;
+}
+.form__input::placeholder {
+  color: inherit;
 }
 
 .form__input:focus {
   outline: none;
-  border-bottom: 2px solid var(--dark);
+  border-bottom: 2px solid var(--gold);
 }
 /* FORM MIXES */
 .form_control {
+  margin-top: 30px;
 }
 /* FORM */
 @media screen and (min-width: 576px) {
@@ -1300,7 +1320,7 @@ template {
 }
 
 .check__square {
-  fill: #ffffff;
+  fill: #ffff;
   stroke: var(--gold);
   stroke-width: 1px;
 }
