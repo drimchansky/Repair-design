@@ -38,6 +38,8 @@
 .button_form {
   margin-top: 1.5em;
 }
+.types_button {
+}
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
   .button_fill {

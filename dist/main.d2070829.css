@@ -429,10 +429,12 @@ template {
   display: flex;
   flex-direction: column;
 }
-.container_control {
+.control_container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.types_container {
 }
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
@@ -794,6 +796,8 @@ template {
 }
 .button_form {
   margin-top: 1.5em;
+}
+.types_button {
 }
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
@@ -1388,6 +1392,32 @@ template {
     width: 100%;
     text-align: center;
   }
+}
+
+/* TYPES */
+.types {
+}
+.types__list {
+}
+.types__item {
+}
+.types__image {
+}
+.types__caption {
+}
+.types__title {
+}
+.types__caption-list {
+}
+.types__caption-item {
+}
+
+/* TYPES MEDIA */
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
 }
 
 /* CSS DEGUB SNIPPET  */
