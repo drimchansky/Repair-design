@@ -35,6 +35,9 @@
   width: 100%;
   margin-top: 1em;
 }
+.button_form {
+  margin-top: 1.5em;
+}
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
   .button_fill {

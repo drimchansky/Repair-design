@@ -1,5 +1,24 @@
 /* FORM */
 .form {
+  display: flex;
+  flex-direction: column;
+}
+.form__label {
+  display: block;
+}
+.form__label:not(:first-child) {
+  margin-top: 20px;
+}
+.form__input {
+  border: none;
+  padding: 5px 0;
+  border-bottom: 2px solid var(--white);
+  transition: all 0.2s;
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--dark);
 }
 /* FORM MIXES */
 .form_control {

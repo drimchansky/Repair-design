@@ -791,6 +791,9 @@ template {
   width: 100%;
   margin-top: 1em;
 }
+.button_form {
+  margin-top: 1.5em;
+}
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
   .button_fill {
@@ -1058,7 +1061,6 @@ template {
 /* CONTROL */
 .control {
   /* background: linear-gradient(to bottom, var(--dark-gray) 95%, var(--white) 5%); */
-  background: #000;
   font-size: 16px;
   padding: 30px 0;
 }
@@ -1153,6 +1155,25 @@ template {
 
 /* FORM */
 .form {
+  display: flex;
+  flex-direction: column;
+}
+.form__label {
+  display: block;
+}
+.form__label:not(:first-child) {
+  margin-top: 20px;
+}
+.form__input {
+  border: none;
+  padding: 5px 0;
+  border-bottom: 2px solid var(--white);
+  transition: all 0.2s;
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--dark);
 }
 /* FORM MIXES */
 .form_control {
@@ -1251,7 +1272,100 @@ template {
 @media screen and (min-width: 1200px) {
 }
 
+/* CHECK */
 
+.check {
+  padding-left: 1.2em;
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.check__input:focus {
+  outline: none;
+}
+
+.check__box {
+  position: absolute;
+  margin-left: -1.2em;
+  width: 1em;
+  height: 1em;
+}
+
+.check__focus {
+  fill: none;
+}
+
+.check__square {
+  fill: #ffffff;
+  stroke: var(--gold);
+  stroke-width: 1px;
+}
+
+.check__mark {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2px;
+}
+
+/* Checked */
+
+.check__input:checked + * .check__square {
+  fill: var(--gold);
+}
+
+/* Focused */
+
+.check__input:focus + * .check__focus {
+  fill: var(--gold);
+}
+
+/* Disabled */
+
+.check__input:disabled + * .check__square {
+  stroke: #9b9b9b;
+}
+
+.check__input:checked:disabled + * .check__square {
+  fill: #9b9b9b;
+}
+/* CHECK MIXES */
+.check_form {
+  margin-top: 10px;
+}
+/* CHECK MEDIA */
+
+/* CSS DEGUB SNIPPET  */
+/* * {
+  background-color: rgba(255, 0, 0, 0.2) !important;
+}
+* * {
+  background-color: rgba(0, 255, 0, 0.2) !important;
+}
+* * * {
+  background-color: rgba(0, 0, 255, 0.2) !important;
+}
+* * * * {
+  background-color: rgba(255, 0, 255, 0.2) !important;
+}
+* * * * * {
+  background-color: rgba(0, 255, 255, 0.2) !important;
+}
+* * * * * * {
+  background-color: rgba(255, 255, 0, 0.2) !important;
+}
+* * * * * * * {
+  background-color: rgba(255, 0, 0, 0.2) !important;
+}
+* * * * * * * * {
+  background-color: rgba(0, 255, 0, 0.2) !important;
+}
+* * * * * * * * * {
+  background-color: rgba(0, 0, 255, 0.2) !important;
+} */
 
 
 /*# sourceMappingURL=/main.d2070829.css.map */
