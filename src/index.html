@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
 
 <head>
   <meta charset="UTF-8" />
@@ -22,10 +22,10 @@
   <!-- height: calc(var(--vh, 1vh) * 100); -->
 </head>
 
-<body class="page">
+<body class="page__body" id="page">
 
   <!-- HEADER -->
-  <header class="header">
+  <header class="header" id="header">
 
     <!-- NAVIGATION -->
     <nav class="nav">
@@ -33,13 +33,13 @@
         <span class="nav__logo">IC "Repair Design Project"</span>
         <ul class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Measurement</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#control" class="nav__link">Control</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Reviews</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
         </ul>
-        <span class="nav__number">+7 (928) 768-32-39</span>
+        <a class="nav__number">+7 (928) 768-32-39</a>
         <button class="button button_fill button_thin nav_button">Request a call</button>
       </div>
     </nav>
@@ -65,7 +65,7 @@
 
 
     <a href="#" class="header__instagram-link">Instagram</a>
-    <a href="#" class="header__scroll-down">Scroll down
+    <a href="#projects" class="header__scroll-down">Scroll down
       <span>
         <svg width="10px" height="30px" fill="var(--gold)" enable-background="new 0 0 451.847 451.847" version="1.1"
           viewBox="0 0 451.847 451.847" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@
   </header>
 
   <!-- PROJECTS -->
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="container projects_container">
 
       <!-- PROJECT-CARD -->
@@ -152,7 +152,7 @@
   </section>
 
   <!-- CONTROL -->
-  <section class="control">
+  <section class="control" id="control">
     <div class="container container_control">
 
       <!-- TITLE -->
@@ -205,7 +205,7 @@
         </div>
 
 
-
+        <!-- CHECK -->
         <label class="check check_form">
           <input class="check__input" type="checkbox">
           <svg class="check__box" viewBox="0 0 20 20">
