@@ -41,6 +41,7 @@
   }
   .timeline_container {
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
