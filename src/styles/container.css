@@ -13,10 +13,13 @@
   display: flex;
   flex-direction: column;
 }
-.container_control {
+.control_container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.types_container {
+  padding: 25px 0 50px 0;
 }
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {

@@ -4,22 +4,23 @@
 @import './fonts.css';
 @import './properties.css';
 
-@import './page.css';
+@import './sections/page.css';
 @import './container.css';
 @import './not-working-yet.css';
-@import './header.css';
+@import './sections/header.css';
 @import './nav.css';
 @import './header-content.css';
 @import './button.css';
-@import './projects.css';
-@import './project-card.css';
-@import './project-stat.css';
-@import './slider.css';
-@import './control.css';
+@import './single/projects.css';
+@import './single/project-card.css';
+@import './single/project-stat.css';
+@import './sections/slider.css';
+@import './sections/control.css';
 @import './title.css';
 @import './form.css';
-@import './video.css';
+@import './single/video.css';
 @import './check.css';
+@import './sections/types.css';
 
 /* CSS DEGUB SNIPPET  */
 /* * {

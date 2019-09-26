@@ -39,8 +39,11 @@
   right: -57px;
 }
 /* TOTLE MIXES */
-.title_control {
+.control_title {
   color: var(--white);
+}
+.types_title {
+  color: var(--dark);
 }
 /* TITLE MEDIA */
 @media screen and (min-width: 576px) {

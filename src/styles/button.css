@@ -22,10 +22,12 @@
   border: 1.3px solid var(--white);
 }
 .button_thin {
-  padding: 7px 0;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 .button_thick {
-  padding: 15px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 /* BUTTON MIXES */
 .nav_button {
@@ -37,6 +39,12 @@
 }
 .button_form {
   margin-top: 1.5em;
+}
+.types_button {
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  padding: 11px;
 }
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
@@ -64,9 +72,13 @@
   .button_form {
     width: 200px;
   }
+  .types_button {
+    left: -15px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .button_thin {
-    padding: 12px 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }

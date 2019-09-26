@@ -5,6 +5,7 @@
 .page {
   font-family: var(--main-font);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .page *:focus {
   outline: 0;
