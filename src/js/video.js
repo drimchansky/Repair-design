@@ -6,6 +6,14 @@ function Videos() {
   }
 }
 
+function parseMediaURL(media) {
+  const regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+  const url = media.src;
+  const match = url.match(regexp);
+
+  return match[1];
+}
+
 function createIframe(id) {
   const iframe = document.createElement('iframe');
   iframe.setAttribute('allowfullscreen', '');
@@ -32,14 +40,6 @@ function setupVideo(video) {
 
   link.removeAttribute('href');
   video.classList.add('video--enabled');
-}
-
-function parseMediaURL(media) {
-  const regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-  const url = media.src;
-  const match = url.match(regexp);
-
-  return match[1];
 }
 
 function generateURL(id) {
