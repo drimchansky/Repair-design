@@ -29,6 +29,9 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.button_narrow {
+  max-width: 200px;
+}
 /* BUTTON MIXES */
 .nav_button {
   display: none;
@@ -37,7 +40,7 @@
   width: 100%;
   margin-top: 1em;
 }
-.button_form {
+.button_types {
   margin-top: 1.5em;
 }
 .types_button {
@@ -45,6 +48,9 @@
   bottom: -28px;
   left: 0;
   padding: 11px;
+}
+.timeline_button {
+  margin-top: 40px;
 }
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
@@ -67,9 +73,12 @@
   .header-content_button:first-child {
     margin-left: 0;
   }
+  .timeline_button {
+    margin-left: auto;
+  }
 }
 @media screen and (min-width: 992px) {
-  .button_form {
+  .button_types {
     width: 200px;
   }
   .types_button {

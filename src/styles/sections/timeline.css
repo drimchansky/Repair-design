@@ -12,6 +12,11 @@
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
+  .timeline__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
 }
 @media screen and (min-width: 1200px) {
 }

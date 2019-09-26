@@ -455,6 +455,9 @@ template {
     padding-top: 80px;
     padding-bottom: 30px;
   }
+  .timeline_container {
+    justify-content: space-between;
+  }
 }
 @media screen and (min-width: 1200px) {
 }
@@ -793,6 +796,9 @@ template {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.button_narrow {
+  max-width: 200px;
+}
 /* BUTTON MIXES */
 .nav_button {
   display: none;
@@ -801,7 +807,7 @@ template {
   width: 100%;
   margin-top: 1em;
 }
-.button_form {
+.button_types {
   margin-top: 1.5em;
 }
 .types_button {
@@ -809,6 +815,9 @@ template {
   bottom: -28px;
   left: 0;
   padding: 11px;
+}
+.timeline_button {
+  margin-top: 40px;
 }
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
@@ -831,9 +840,12 @@ template {
   .header-content_button:first-child {
     margin-left: 0;
   }
+  .timeline_button {
+    margin-left: auto;
+  }
 }
 @media screen and (min-width: 992px) {
-  .button_form {
+  .button_types {
     width: 200px;
   }
   .types_button {
@@ -1190,6 +1202,12 @@ template {
   flex-direction: column;
   max-width: 800px;
 }
+.form__caption {
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
 .form__field {
   display: flex;
   flex-direction: column;
@@ -1235,12 +1253,18 @@ template {
   color: var(--white);
   margin-top: 30px;
 }
+.form_timeline {
+  background: var(--dark-gray);
+  color: var(--white);
+  width: 100%;
+  max-width: 400px;
+  padding: 2em 3em;
+}
 .form__field_control {
   min-width: 230px;
 }
-.form_timeline {
-}
 .form__field_timeline {
+  padding: 20px 0;
 }
 /* FORM */
 @media screen and (min-width: 576px) {
@@ -1254,6 +1278,8 @@ template {
   }
   .form__field:not(:first-child) {
     margin-top: 0;
+  }
+  .form_timeline {
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1406,12 +1432,15 @@ template {
   fill: #9b9b9b;
 }
 /* CHECK MIXES */
-.check_form {
+.check_types {
   margin-top: 20px;
+}
+.check_timeline {
+  margin-top: 1em;
 }
 /* CHECK MEDIA */
 @media screen and (min-width: 992px) {
-  .check_form {
+  .check_types {
     order: 10;
     width: 100%;
     text-align: center;
@@ -1505,6 +1534,11 @@ template {
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
+  .timeline__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
 }
 @media screen and (min-width: 1200px) {
 }
