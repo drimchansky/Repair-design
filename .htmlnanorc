@@ -1,7 +1,7 @@
 {
     "collapseAttributeWhitespace": false,
     "collapseBooleanAttributes": false,
-    "collapseWhitespace": false,
+    "collapseWhitespace": true,
     "custom": [],
     "deduplicateAttributeValues": false,
     "mergeScripts": false,

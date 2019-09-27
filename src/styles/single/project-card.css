@@ -26,6 +26,9 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .project-card {
+    width: 40%;
+  }
   .project-card__list {
     width: 100%;
   }
