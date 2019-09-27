@@ -19,7 +19,11 @@
   align-items: center;
 }
 .types_container {
-  padding: 25px 0 50px 0;
+  padding: 25px 0 100px 0;
+}
+.timeline_container {
+  display: flex;
+  justify-content: center;
 }
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
@@ -34,6 +38,10 @@
     align-items: flex-start;
     padding-top: 80px;
     padding-bottom: 30px;
+  }
+  .timeline_container {
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {

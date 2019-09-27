@@ -30,7 +30,7 @@
 .types__caption {
   position: absolute;
   left: 0;
-  bottom: -80px;
+  top: 220px;
   background: #fff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
   padding: 1.2em 2.5em 1.2em 1.2em;

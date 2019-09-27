@@ -206,7 +206,7 @@
 
 
         <!-- CHECK -->
-        <label class="check check_form">
+        <label class="check check_types">
           <input class="check__input" type="checkbox">
           <svg class="check__box" viewBox="0 0 20 20">
             <rect class="check__focus" width="20" height="20" rx="4" />
@@ -216,7 +216,7 @@
           I agree to the processing of personal data
         </label>
 
-        <button class="button button_fill button_thick button_form">Submit</button>
+        <button class="button button_fill button_thick button_types">Submit</button>
 
       </form>
 
@@ -287,10 +287,108 @@
           </li>
         </ul>
       </div>
-
     </div>
   </section>
 
+  <!-- TIMELINE -->
+  <section class="timeline">
+    <div class="container timeline_container">
+
+      <ul class="timeline__list">
+        <li class="timeline__item" data-num="01">
+          <svg class="timeline__figure_one" width="349" height="553" fill="none">
+            <path d="M-52.61 551.488A316.562 316.562 0 01347.386 62.026" stroke="url(#paint0_linear)" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="489.625" y1="283.859" x2="-1.451" y2="283.859"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#E3B873" />
+                <stop offset="1" stop-color="#E3B873" stop-opacity="0" />
+            </defs>
+          </svg>
+          <svg class="timeline__figure_two" width="43" height="98">
+            <path d="M41.183 1.817A316.56 316.56 0 012.205 95.854" stroke="url(#paint0_linear)" stroke-width="3"
+              stroke-linecap="round" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="61.465" y1="-105.004" x2="-429.611" y2="-105.004"
+                gradientUnits="userSpaceOnUse">
+              </linearGradient>
+            </defs>
+          </svg>
+          Our specialist will arrive for measurements per day
+          contact, or appoint a date convenient for you</li>
+        <li class="timeline__item" data-num="02">
+          <svg class="timeline__figure_three" width="43" height="98">
+            <path d="M41.183 1.817A316.56 316.56 0 012.205 95.854" stroke="url(#paint0_linear)" stroke-width="3"
+              stroke-linecap="round" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="61.465" y1="-105.004" x2="-429.611" y2="-105.004"
+                gradientUnits="userSpaceOnUse">
+              </linearGradient>
+            </defs>
+          </svg>
+          Free metering</li>
+        <li class="timeline__item" data-num="03">
+          <svg class="timeline__figure_four" width="43" height="98">
+            <path d="M41.183 1.817A316.56 316.56 0 012.205 95.854" stroke="url(#paint0_linear)" stroke-width="3"
+              stroke-linecap="round" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="61.465" y1="-105.004" x2="-429.611" y2="-105.004"
+                gradientUnits="userSpaceOnUse">
+              </linearGradient>
+            </defs>
+          </svg>
+          Free consultation</li>
+        <li class="timeline__item" data-num="04">
+          <svg class="timeline__figure_five" width="383" height="93" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M380.543 2.184A316.56 316.56 0 01-4.55 43.848" stroke="url(#paint0_linear)" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="489.465" y1="-260.141" x2="-1.611" y2="-260.141"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#E3B873" />
+                <stop offset="1" stop-color="#E3B873" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+          Get a cost estimate and
+          the timing of your future repairs</li>
+      </ul>
+
+      <!-- FORM -->
+      <form class="form form_timeline">
+
+        <h4 class="form__caption">Leave a request for free
+          departure of the measurer</h4>
+
+        <div class="form__field form__field_timeline">
+          <label class="form__label" for="name-field">Name</label>
+          <input class="form__input" type="text" id="name-field" placeholder="What is your name:" />
+        </div>
+
+        <div class="form__field form__field_timeline">
+          <label class="form__label" for="email-field">E-mail</label>
+          <input class="form__input" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" id="email-field"
+            placeholder="Your e-mail:">
+        </div>
+
+
+        <!-- CHECK -->
+        <label class="check check_timeline">
+          <input class="check__input" type="checkbox">
+          <svg class="check__box" viewBox="0 0 20 20">
+            <rect class="check__focus" width="20" height="20" rx="4" />
+            <rect class="check__square sceck__square_dark" x="3" y="3" width="14" height="14" rx="2" />
+            <polyline class="check__mark" points="5 9 9 13 15 6" />
+          </svg>
+          I agree to the processing of personal data
+        </label>
+
+        <button class="button button_fill button_thick button_narrow timeline_button">Call the measurer</button>
+
+      </form>
+    </div>
+  </section>
 
   <script src="./js/index.js"></script>
 </body>

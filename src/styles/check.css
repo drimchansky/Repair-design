@@ -30,14 +30,22 @@
   stroke: var(--gold);
   stroke-width: 1px;
 }
+.sceck__square_dark {
+  fill: var(--dark-gray);
+}
 
 .check__mark {
   fill: none;
   stroke: #ffffff;
   stroke-width: 2px;
+  opacity: 0;
 }
 
 /* Checked */
+
+.check__input:checked + * .check__mark {
+  opacity: 1;
+}
 
 .check__input:checked + * .check__square {
   fill: var(--gold);
@@ -59,12 +67,15 @@
   fill: #9b9b9b;
 }
 /* CHECK MIXES */
-.check_form {
+.check_types {
   margin-top: 20px;
+}
+.check_timeline {
+  margin-top: 1em;
 }
 /* CHECK MEDIA */
 @media screen and (min-width: 992px) {
-  .check_form {
+  .check_types {
     order: 10;
     width: 100%;
     text-align: center;
