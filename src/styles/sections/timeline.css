@@ -14,7 +14,7 @@
   .timeline {
     padding: 130px 0 100px 0;
     font-size: 20px;
-    background: url(../../img/timeline-bg.svg) no-repeat;
+    background: url(../../img/timeline-bg.webp) no-repeat;
   }
   .timeline__list {
     display: flex;

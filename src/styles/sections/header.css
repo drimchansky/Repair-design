@@ -1,7 +1,7 @@
 /* HEADER */
 .header {
   position: relative;
-  background: black center / cover url(../../img/header-bg.png);
+  background: black center / cover url(../../img/header-bg.jpg);
 }
 .header__instagram-link {
   display: none;
