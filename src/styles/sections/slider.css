@@ -3,6 +3,8 @@
   width: 100%;
   max-width: 500px;
 }
+.slider-wrapper_gallery {
+}
 .slider {
   font-size: 16px;
   width: 100%;
@@ -81,6 +83,9 @@
   .swiper-button-prev:after {
     color: var(--white);
     font-size: 1.5em;
+  }
+  .slider-wrapper_gallery {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {

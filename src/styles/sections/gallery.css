@@ -1,6 +1,6 @@
 /* GALLERY */
 .gallery {
-  background: linear-gradient(to bottom, #fff 50%, var(--dark-gray) 50%);
+  background: linear-gradient(to bottom, #fff 65%, var(--dark-gray) 35%);
 }
 /* GALLERY MEDIA */
 @media screen and (min-width: 576px) {
