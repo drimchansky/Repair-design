@@ -30,7 +30,7 @@
 .types__caption {
   position: absolute;
   left: 0;
-  bottom: -30px;
+  top: calc(35vw * 1.25);
   background: #fff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08);
   padding: 1.2em 2.5em 1.2em 1.2em;
@@ -54,6 +54,9 @@
   .types {
     font-size: 20px;
   }
+  .types__caption {
+    top: 180px;
+  }
 }
 @media screen and (min-width: 992px) {
   .types__list {
@@ -62,6 +65,9 @@
   }
   .types__item:not(:first-child) {
     margin-top: auto;
+  }
+  .types__caption {
+    top: 250px;
   }
 }
 @media screen and (min-width: 1200px) {
