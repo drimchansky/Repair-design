@@ -1,7 +1,12 @@
 /* HEADER */
 .header {
   position: relative;
+}
+.no-webp .header {
   background: black center / cover url(../../img/header-bg.jpg);
+}
+.webp .header {
+  background: black center / cover url(../../img/header-bg.webp);
 }
 .header__instagram-link {
   display: none;

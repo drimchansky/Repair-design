@@ -482,7 +482,12 @@ template {
 /* HEADER */
 .header {
   position: relative;
+}
+.no-webp .header {
   background: black center / cover url(/header-bg.238d3e41.jpg);
+}
+.webp .header {
+  background: black center / cover url(/header-bg.f705aada.webp);
 }
 .header__instagram-link {
   display: none;
