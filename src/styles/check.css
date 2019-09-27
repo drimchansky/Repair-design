@@ -30,14 +30,22 @@
   stroke: var(--gold);
   stroke-width: 1px;
 }
+.sceck__square_dark {
+  fill: var(--dark-gray);
+}
 
 .check__mark {
   fill: none;
   stroke: #ffffff;
   stroke-width: 2px;
+  opacity: 0;
 }
 
 /* Checked */
+
+.check__input:checked + * .check__mark {
+  opacity: 1;
+}
 
 .check__input:checked + * .check__square {
   fill: var(--gold);
