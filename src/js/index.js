@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import Videos from './video';
+import './modernizr-custom';
 
 let mySwiper = new Swiper('.swiper-container', {
   loop: true,

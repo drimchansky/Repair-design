@@ -35,7 +35,7 @@
     font-size: 20px;
     /* background: url(../../img/city-bg.png) no-repeat 0px -120%,
       linear-gradient(to top, #fff 60%, var(--dark-gray) 40%); */
-    background: url(../../img/city-bg.png) repeat-x 0px -138%,
+    background: url(../../img/city-bg.webp) repeat-x 0px -138%,
       linear-gradient(to top, #fff 60%, var(--dark-gray) 40%);
   }
   .control__description {

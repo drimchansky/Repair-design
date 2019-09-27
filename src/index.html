@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
+<html lang="en" class="page no-js">
 
 <head>
   <meta charset="UTF-8" />
@@ -8,10 +8,12 @@
   <link rel="icon" href="img/favicon-1.ico" />
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css" />
-  <title>Repair-design</title>
+  <title>Repair-Design</title>
 
-  <!-- Fix chrome mobile vh -->
   <script>
+    document.documentElement.classList.remove("no-js");
+
+    // <!-- Fix chrome mobile vh -->
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     window.addEventListener('resize', () => {
@@ -134,10 +136,10 @@
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" data-swiper-autoplay="6000">
-                  <img src="./img/slider-image-1.png" alt="furniture">
+                  <img src="./img/slider-image-1.jpg" alt="furniture">
                 </div>
                 <div class="swiper-slide" data-swiper-autoplay="6000">
-                  <img src="./img/slider-image-2.png" alt="furniture">
+                  <img src="./img/slider-image-2.jpg" alt="furniture">
                 </div>
               </div>
 
@@ -237,7 +239,11 @@
       <div class="types">
         <ul class="types__list">
           <li class="types__item">
-            <img src="./img/type-image-1.png" alt="type" class="types__image">
+            <picture class="types__image">
+              <source srcset="./img/type-image-1.webp" type="image/webp">
+              <source srcset="./img/type-image-1.jpg" type="image/jpeg">
+              <img src="./img/type-image-1.jpg" alt="Alt Text!">
+            </picture>
             <div class="types__caption">
               <h4 class="types__title">Redecorating</h4>
               <ul class="types__caption-list">
@@ -253,7 +259,11 @@
             </div>
           </li>
           <li class="types__item">
-            <img src="./img/type-image-2.png" alt="type" class="types__image">
+            <picture class="types__image">
+              <source srcset="./img/type-image-2.webp" type="image/webp">
+              <source srcset="./img/type-image-2.jpg" type="image/jpeg">
+              <img src="./img/type-image-2.jpg" alt="Alt Text!">
+            </picture>
             <div class="types__caption">
               <h4 class="types__title">Overhaul</h4>
               <ul class="types__caption-list">
@@ -270,7 +280,11 @@
 
           </li>
           <li class="types__item">
-            <img src="./img/type-image-3.png" alt="type" class="types__image">
+            <picture class="types__image">
+              <source srcset="./img/type-image-3.webp" type="image/webp">
+              <source srcset="./img/type-image-3.jpg" type="image/jpeg">
+              <img src="./img/type-image-3.jpg" alt="Alt Text!">
+            </picture>
             <div class="types__caption">
               <h4 class="types__title">Designer Repair</h4>
               <ul class="types__caption-list">
