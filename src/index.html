@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./styles/main.css" />
   <title>Repair-Design</title>
 
+  <script src="js/modernizr-custom-min.js"></script>
   <script>
     document.documentElement.classList.remove("no-js");
 
@@ -85,7 +86,7 @@
       <!-- PROJECT-CARD -->
       <article class="project-card">
         <ul class="project-card__list">
-          <li class="project-card__item" data-project="1">
+          <li class="project-card__item">
 
             <!-- PROJECT-STATs -->
             <ul class="project-stat 
@@ -128,10 +129,9 @@
       </article>
 
       <!-- SLIDER -->
-      <aside class="slider">
-        <ul class="slider__list">
-          <li class="slider__item slider__item--active" data-project="1">
-
+      <div class="slider-wrapper">
+        <aside class="slider">
+          <div class="slider__inner">
             <!-- SWIPER-->
             <div class="swiper-container">
               <div class="swiper-wrapper">
@@ -147,9 +147,13 @@
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
-          </li>
-        </ul>
-      </aside>
+          </div>
+
+        </aside>
+      </div>
+
+    </div>
+
     </div>
   </section>
 
@@ -218,7 +222,7 @@
           I agree to the processing of personal data
         </label>
 
-        <button class="button button_fill button_thick button_types">Submit</button>
+        <button class="button button_fill button_thick control_button ">Submit</button>
 
       </form>
 
@@ -239,10 +243,10 @@
       <div class="types">
         <ul class="types__list">
           <li class="types__item">
-            <picture class="types__image">
+            <picture>
               <source srcset="./img/type-image-1.webp" type="image/webp">
               <source srcset="./img/type-image-1.jpg" type="image/jpeg">
-              <img src="./img/type-image-1.jpg" alt="Alt Text!">
+              <img src="./img/type-image-1.jpg" class="types__image" alt="Alt Text!">
             </picture>
             <div class="types__caption">
               <h4 class="types__title">Redecorating</h4>
@@ -259,10 +263,10 @@
             </div>
           </li>
           <li class="types__item">
-            <picture class="types__image">
+            <picture>
               <source srcset="./img/type-image-2.webp" type="image/webp">
               <source srcset="./img/type-image-2.jpg" type="image/jpeg">
-              <img src="./img/type-image-2.jpg" alt="Alt Text!">
+              <img src="./img/type-image-2.jpg" class="types__image" alt="Alt Text!">
             </picture>
             <div class="types__caption">
               <h4 class="types__title">Overhaul</h4>
@@ -280,10 +284,10 @@
 
           </li>
           <li class="types__item">
-            <picture class="types__image">
+            <picture>
               <source srcset="./img/type-image-3.webp" type="image/webp">
               <source srcset="./img/type-image-3.jpg" type="image/jpeg">
-              <img src="./img/type-image-3.jpg" alt="Alt Text!">
+              <img src="./img/type-image-3.jpg" class="types__image" alt="Alt Text!">
             </picture>
             <div class="types__caption">
               <h4 class="types__title">Designer Repair</h4>
@@ -372,7 +376,7 @@
       <!-- FORM -->
       <form class="form form_timeline">
 
-        <h4 class="form__caption">Leave a request for free
+        <h4 class="form__caption">Leave a request for free<br>
           departure of the measurer</h4>
 
         <div class="form__field form__field_timeline">
@@ -401,6 +405,45 @@
         <button class="button button_fill button_thick button_narrow timeline_button">Call the measurer</button>
 
       </form>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <div class="container gallery_container">
+
+      <!-- TITLE -->
+      <div class="title gallery_title">
+        <h3 class="title__text">We realize your<br>wildest fantasies</h3>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="slider-wrapper slider-wrapper_gallery">
+        <aside class="slider">
+          <div class="slider__inner">
+            <!-- SWIPER-->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data-swiper-autoplay="6000">
+                  <img src="./img/gallery-small-1.jpg" alt="furniture">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="6000">
+                  <img src="./img/gallery-small-2.jpg" alt="furniture">
+                </div>
+                <div class="swiper-slide" data-swiper-autoplay="6000">
+                  <img src="./img/gallery-small-3.jpg" alt="furniture">
+                </div>
+              </div>
+
+              <!-- SWIPER ARROWS -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+
     </div>
   </section>
 

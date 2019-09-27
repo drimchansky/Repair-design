@@ -45,6 +45,9 @@
 .types_title {
   color: var(--dark);
 }
+.gallery_title {
+  color: var(--gold);
+}
 /* TITLE MEDIA */
 @media screen and (min-width: 576px) {
 }

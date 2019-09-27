@@ -36,13 +36,16 @@
 .nav_button {
   display: none;
 }
+
 .header-content_button {
   width: 100%;
   margin-top: 1em;
 }
-.button_types {
-  margin-top: 1.5em;
+
+.control_button {
+  margin-top: 1em;
 }
+
 .types_button {
   position: absolute;
   bottom: -28px;
@@ -78,16 +81,16 @@
   }
 }
 @media screen and (min-width: 992px) {
-  .button_types {
+  .control_button {
     width: 200px;
-  }
-  .types_button {
-    left: -15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .button_thin {
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+  .types_button {
+    left: -15px;
   }
 }

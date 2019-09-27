@@ -2,7 +2,8 @@
 .header {
   position: relative;
 }
-.no-webp .header {
+.no-webp .header,
+.no-js .header {
   background: black center / cover url(../../img/header-bg.jpg);
 }
 .webp .header {
