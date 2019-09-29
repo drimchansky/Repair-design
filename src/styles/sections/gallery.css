@@ -1,12 +1,32 @@
 /* GALLERY */
 .gallery {
   background: linear-gradient(to bottom, #fff 65%, var(--dark-gray) 35%);
-  padding: 30px 30px 30px 0;
 }
 /* GALLERY MEDIA */
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
+  .gallery {
+    position: relative;
+  }
+  .gallery:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 1, 0.7);
+    z-index: 0;
+  }
+  .no-webp .gallery,
+  .no-js .gallery {
+    background: center / cover url(../../img/gallery-bg.jpg) no-repeat;
+  }
+  .webp .gallery {
+    background: center / cover url(../../img/gallery-bg.webp) no-repeat;
+  }
 }
+
 @media screen and (min-width: 1200px) {
 }

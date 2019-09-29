@@ -300,7 +300,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/single/exhibition.css":[function(require,module,exports) {
+},{"./..\\..\\img\\gallery-bg.jpg":[["gallery-bg.4e22b7e9.jpg","img/gallery-bg.jpg"],"img/gallery-bg.jpg"],"./..\\..\\img\\gallery-bg.webp":[["gallery-bg.7274c3c8.webp","img/gallery-bg.webp"],"img/gallery-bg.webp"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/single/exhibition.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
