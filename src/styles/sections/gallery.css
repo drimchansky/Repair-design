@@ -8,6 +8,7 @@
 @media screen and (min-width: 992px) {
   .gallery {
     position: relative;
+    margin-top: 70px;
   }
   .gallery:before {
     position: absolute;
@@ -29,4 +30,7 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .gallery {
+    margin-top: 150px;
+  }
 }
