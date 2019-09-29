@@ -23,6 +23,7 @@
 @import './sections/types.css';
 @import './sections/timeline.css';
 @import './sections/gallery.css';
+@import './single/exhibition.css';
 
 /* CSS DEGUB SNIPPET  */
 /* * {

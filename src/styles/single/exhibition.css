@@ -1,0 +1,37 @@
+/* EXHIBITION */
+.exhib {
+}
+/* left */
+.exhib__list-wrapper {
+}
+.exhib__type-list {
+}
+.exhib__type-item {
+}
+.exhib__type-button {
+}
+/* right */
+.exhib__show-list {
+}
+.exhib__show-item {
+  transform: translateX(300%);
+  opacity: 0;
+}
+.exhib__show-item--active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.exhib__img-list {
+}
+.exhib__img-item {
+}
+.exhib__image {
+}
+
+/* TITLE MEDIA */
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}
