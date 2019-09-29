@@ -130,7 +130,7 @@
 
       <!-- SLIDER -->
       <div class="slider-wrapper">
-        <aside class="slider">
+        <aside class="slider project_slider">
           <div class="slider__inner">
             <!-- SWIPER-->
             <div class="swiper-container">
@@ -419,7 +419,7 @@
 
       <!-- SLIDER (mobile-tablet) -->
       <div class="slider-wrapper slider-wrapper_gallery">
-        <aside class="slider">
+        <aside class="slider gallery_slider">
           <div class="slider__inner">
             <!-- SWIPER-->
             <div class="swiper-container">
@@ -447,11 +447,14 @@
       <div class="exhib">
         <aside class="exhib__list-wrapper">
 
-          <h4 class="title exhib_title">We realize your<br>wildest fantasies</h4>
+          <!-- TITLE -->
+          <div class="title exhib_title">
+            <h3 class="title__text">We realize your<br>wildest fantasies</h3>
+          </div>
 
           <ul class="exhib__type-list">
             <li class="exhib__type-item">
-              <button class="exhib__type-button">American classic</button>
+              <button class="exhib__type-button exhib__type-button--active">American classic</button>
             </li>
             <li class="exhib__type-item">
               <button class="exhib__type-button">Empire</button>
@@ -484,55 +487,53 @@
               <button class="exhib__type-button">Eclecticism</button>
             </li>
           </ul>
+        </aside>
+        <ul class="exhib__show-list">
 
-          <ul class="exhib__show-list">
-
-            <li class="exhib__show-item exhib__show-item--active">
-              <ul class="exhib__img-list">
-                <li class="exhib__img-item">
-                  <picture class="exhib__image">
-                    <source srcset="./img/gallery-big.webp" type="image/webp">
-                    <source srcset="./img/gallery-big.jpg" type="image/jpeg">
-                    <img src="./img/gallery-big.jpg" class="types__image" alt="Alt Text!">
-                  </picture>
-                </li>
-                <li class="exhib__img-item">
-                  <picture class="exhib__image">
-                    <!-- no webp -->
-                    <source srcset="./img/gallery-small-3.jpg" type="image/jpeg">
-                    <img src="./img/gallery-small-3.jpg" class="types__image" alt="Alt Text!">
-                  </picture>
-                </li>
-                <li class="exhib__img-item">
-                  <picture class="exhib__image">
-                    <!-- no webp -->
-                    <source srcset="./img/gallery-small-2.jpg" type="image/jpeg">
-                    <img src="./img/gallery-small-2.jpg" class="types__image" alt="Alt Text!">
-                  </picture>
-                </li>
-                <li class="exhib__img-item">
-                  <picture class="exhib__image">
-                    <source srcset="./img/gallery-big-2.webp" type="image/webp">
-                    <source srcset="./img/gallery-big-2.jpg" type="image/jpeg">
-                    <img src="./img/gallery-big-2.jpg" class="types__image" alt="Alt Text!">
-                  </picture>
-                </li>
-              </ul>
-            </li>
-            <li class="exhib__show-item"></li>
-            <li class="exhib__show-item"></li>
-            <li class="exhib__show-item"></li>
-            <li class="exhib__show-item"></li>
-            <li class="exhib__show-item"></li>
-            <li class="exhib__show-item"></li>
-            <li class="exhib__show-item"></li>
-            <li class="exhib__show-item"></li>
-            <li class="exhib__show-item"></li>
-            <li class="exhib__show-item"></li>
-          </ul>
-
+          <li class="exhib__show-item exhib__show-item--active">
+            <ul class="exhib__img-list">
+              <li class="exhib__img-item exhib__img-item_big">
+                <picture>
+                  <source srcset="./img/gallery-big.webp" type="image/webp">
+                  <source srcset="./img/gallery-big.jpg" type="image/jpeg">
+                  <img src="./img/gallery-big.jpg" class="exhib__image" alt="Alt Text!">
+                </picture>
+              </li>
+              <li class="exhib__img-item exhib__img-item_small">
+                <picture>
+                  <!-- no webp -->
+                  <source srcset="./img/gallery-small-3.jpg" type="image/jpeg">
+                  <img src="./img/gallery-small-3.jpg" class="exhib__image" alt="Alt Text!">
+                </picture>
+              </li>
+              <li class="exhib__img-item exhib__img-item_big">
+                <picture>
+                  <source srcset="./img/gallery-big-2.webp" type="image/webp">
+                  <source srcset="./img/gallery-big-2.jpg" type="image/jpeg">
+                  <img src="./img/gallery-big-2.jpg" class="exhib__image" alt="Alt Text!">
+                </picture>
+              </li>
+              <li class="exhib__img-item exhib__img-item_small">
+                <picture>
+                  <!-- no webp -->
+                  <source srcset="./img/gallery-small-2.jpg" type="image/jpeg">
+                  <img src="./img/gallery-small-2.jpg" class="exhib__image" alt="Alt Text!">
+                </picture>
+              </li>
+            </ul>
+          </li>
+          <li class="exhib__show-item"></li>
+          <li class="exhib__show-item"></li>
+          <li class="exhib__show-item"></li>
+          <li class="exhib__show-item"></li>
+          <li class="exhib__show-item"></li>
+          <li class="exhib__show-item"></li>
+          <li class="exhib__show-item"></li>
+          <li class="exhib__show-item"></li>
+          <li class="exhib__show-item"></li>
+          <li class="exhib__show-item"></li>
+        </ul>
       </div>
-
     </div>
   </section>
 

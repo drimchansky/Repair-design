@@ -12,6 +12,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
+  text-align: center;
 }
 .title__imgwrap {
   position: relative;
@@ -48,9 +49,6 @@
 .gallery_title {
   color: var(--gold);
 }
-.exhib_title {
-  color: var(--gold);
-}
 /* TITLE MEDIA */
 @media screen and (min-width: 576px) {
 }
@@ -60,6 +58,10 @@
   }
   .gallery_title {
     display: none;
+  }
+  .exhib_title .title__text {
+    color: var(--gold);
+    text-align: left;
   }
 }
 @media screen and (min-width: 1200px) {
