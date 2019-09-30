@@ -4,6 +4,7 @@
   max-width: 500px;
 }
 .slider-wrapper_gallery {
+  margin: 0 auto;
 }
 .slider {
   font-size: 16px;
@@ -11,7 +12,6 @@
   height: 0;
   position: relative;
   padding-bottom: 56.25%;
-  margin-top: 50px;
 }
 .slider__inner {
   position: absolute;
@@ -39,6 +39,12 @@
 }
 
 /* SLIDER MIXES */
+.project_slider {
+  margin-top: 50px;
+}
+.gallery_slider {
+  margin-top: 30px;
+}
 /* SLIDER MEDIA */
 @media screen and (min-width: 576px) {
   .slider {

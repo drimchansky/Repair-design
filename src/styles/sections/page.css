@@ -7,6 +7,9 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+.page__body {
+  overflow: hidden;
+}
 .page *:focus {
   outline: 0;
   outline: 3px solid var(--white);
