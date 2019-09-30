@@ -22,7 +22,7 @@ function switchCase(event) {
 
     showCases.forEach(a => {
       if (a.dataset.type === pressedButtonType) {
-        setTimeout(() => a.classList.add('exhib__show-item--active'), 500);
+        setTimeout(() => a.classList.add('exhib__show-item--active'), 300);
       }
     });
   }

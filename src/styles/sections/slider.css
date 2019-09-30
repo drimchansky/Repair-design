@@ -4,6 +4,7 @@
   max-width: 500px;
 }
 .slider-wrapper_gallery {
+  margin: 0 auto;
 }
 .slider {
   font-size: 16px;
