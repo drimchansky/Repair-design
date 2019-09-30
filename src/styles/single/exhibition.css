@@ -7,9 +7,11 @@
 @media screen and (min-width: 992px) {
   /* EXHIBITION */
   .exhib {
+    padding: 100px 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 100%;
   }
   /* left */
   .exhib__list-wrapper {
@@ -50,8 +52,9 @@
   .exhib__show-list {
     list-style-type: none;
     padding: 0;
-    width: 50%;
+    width: 45%;
     position: relative;
+    margin-right: 30px;
   }
   .exhib__show-item {
     transform: translateX(300%);
@@ -79,11 +82,9 @@
 
   .exhib__img-item_big {
     grid-row-end: span 2;
-    max-height: 550px;
   }
   .exhib__img-item_small {
     grid-row-end: span 1;
-    max-height: 300px;
   }
   .exhib__image {
     height: 100%;

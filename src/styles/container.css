@@ -27,10 +27,6 @@
   justify-content: center;
 }
 .gallery_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0;
 }
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
@@ -51,7 +47,6 @@
     align-items: flex-start;
   }
   .gallery_container {
-    padding: 100px 0 50px 0;
   }
 }
 @media screen and (min-width: 1200px) {
