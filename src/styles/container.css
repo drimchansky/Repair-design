@@ -28,6 +28,9 @@
 }
 .gallery_container {
 }
+.design_container {
+  padding: 50px 0 250px;
+}
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
   .projects_container {
@@ -47,6 +50,9 @@
     align-items: flex-start;
   }
   .gallery_container {
+  }
+  .design_container {
+    padding: 160px 0 300px;
   }
 }
 @media screen and (min-width: 1200px) {

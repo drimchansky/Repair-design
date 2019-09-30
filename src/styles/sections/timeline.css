@@ -15,6 +15,7 @@
     padding: 200px 0 100px 0;
     font-size: 20px;
     background: url(../../img/timeline-bg.webp) no-repeat;
+    background-position-x: 15%;
   }
   .timeline__list {
     display: flex;

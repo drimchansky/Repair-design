@@ -10,18 +10,18 @@
   font-size: 1.2em;
 }
 .form__field {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 .form__field:not(:first-child) {
   margin-top: 10px;
 }
 .form__label {
+  display: block;
   top: 0;
   right: 100%;
 }
 .form__input {
+  display: block;
+  width: 100%;
   border: none;
   padding: 5px 0;
   color: inherit;

@@ -228,7 +228,7 @@
 
     </div>
   </section>
-  <section class="types">
+  <section class="types-wrapper">
     <div class="container types_container">
 
       <!-- TITLE -->
@@ -425,13 +425,25 @@
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" data-swiper-autoplay="6000">
-                  <img src="./img/gallery-small-1.jpg" alt="furniture">
+                  <picture>
+                    <source srcset="./img/mail.png" media="(min-width: 992px)">
+                    <source srcset="./img/mobile/gallery-mobile-1.webp" type="image/webp">
+                    <img src="./img/mobile/gallery-mobile-1.jpg" alt="Alt Text!">
+                  </picture>
                 </div>
                 <div class="swiper-slide" data-swiper-autoplay="6000">
-                  <img src="./img/gallery-small-2.jpg" alt="furniture">
+                  <picture>
+                    <source srcset="./img/mail.png" media="(min-width: 992px)">
+                    <source srcset="./img/mobile/gallery-mobile-2.webp" type="image/webp">
+                    <img src="./img/mobile/gallery-mobile-2.jpg" alt="Alt Text!">
+                  </picture>
                 </div>
                 <div class="swiper-slide" data-swiper-autoplay="6000">
-                  <img src="./img/gallery-small-3.jpg" alt="furniture">
+                  <picture>
+                    <source srcset="./img/mail.png" media="(min-width: 992px)">
+                    <source srcset="./img/mobile/gallery-mobile-3.webp" type="image/webp">
+                    <img src="./img/mobile/gallery-mobile-3.jpg" alt="Alt Text!">
+                  </picture>
                 </div>
               </div>
 
@@ -860,17 +872,90 @@
     </div>
   </section>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <!-- DESIGN (TYPES SECTION) -->
+  <section class="types-wrapper ">
+    <div class="container design_container">
+
+      <!-- TITLE -->
+      <div class="title types_title">
+        <h3 class="title__text">design project</h3>
+        <div class="title__imgwrap">
+          <img src="./img/pen.png" alt="design project" class="title__image">
+        </div>
+      </div>
+
+      <!-- TYPES -->
+      <div class="types">
+        <ul class="types__list">
+          <li class="types__item">
+            <picture>
+              <source srcset="./img/type-image-1.webp" type="image/webp">
+              <source srcset="./img/type-image-1.jpg" type="image/jpeg">
+              <img src="./img/type-image-1.jpg" class="types__image" alt="Alt Text!">
+            </picture>
+            <div class="types__caption">
+              <h4 class="types__title">Mini</h4>
+              <ul class="types__caption-list">
+                <li class="types__caption-item">Measurement drawing</li>
+                <li class="types__caption-item">Redevelopment</li>
+                <li class="types__caption-item">Layout of furniture</li>
+                <li class="types__caption-item">Plumbing plan. equipment</li>
+                <button class="button button_fill button_thin types_button">from 900 rub / m2</button>
+              </ul>
+            </div>
+          </li>
+          <li class="types__item">
+            <picture>
+              <source srcset="./img/type-image-2.webp" type="image/webp">
+              <source srcset="./img/type-image-2.jpg" type="image/jpeg">
+              <img src="./img/type-image-2.jpg" class="types__image" alt="Alt Text!">
+            </picture>
+            <div class="types__caption">
+              <h4 class="types__title">Standard</h4>
+              <ul class="types__caption-list">
+                <li class="types__caption-item">Measurement drawing</li>
+                <li class="types__caption-item">Redevelopment</li>
+                <li class="types__caption-item">Layout of furniture</li>
+                <li class="types__caption-item">Plan of ceilings</li>
+                <li class="types__caption-item">Floor Plan</li>
+                <li class="types__caption-item">Electricians plan</li>
+                <li class="types__caption-item">Lighting plan</li>
+                <button class="button button_fill button_thin types_button">from 1800 rub / m2</button>
+              </ul>
+            </div>
+
+          </li>
+          <li class="types__item">
+            <picture>
+              <source srcset="./img/type-image-3.webp" type="image/webp">
+              <source srcset="./img/type-image-3.jpg" type="image/jpeg">
+              <img src="./img/type-image-3.jpg" class="types__image" alt="Alt Text!">
+            </picture>
+            <div class="types__caption">
+              <h4 class="types__title">Full</h4>
+              <ul class="types__caption-list">
+                <li class="types__caption-item">Measurement drawing</li>
+                <li class="types__caption-item">Redevelopment</li>
+                <li class="types__caption-item">Layout of furniture</li>
+                <li class="types__caption-item">Plan of ceilings</li>
+                <li class="types__caption-item">Floor Plan</li>
+                <li class="types__caption-item">Electricians plan</li>
+                <li class="types__caption-item">Lighting plan</li>
+                <li class="types__caption-item">Wall reamers</li>
+                <li class="types__caption-item">3D visualization</li>
+                <li class="types__caption-item">Bill of materials</li>
+                <li class="types__caption-item">Departure for a selection of materials</li>
+                <li class="types__caption-item">Furniture selection</li>
+                <button class="button button_fill button_thin types_button">from 4000 rub / m2</button>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  next content
+
   <script src="./js/index.js"></script>
 </body>
 
