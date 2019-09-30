@@ -24,6 +24,9 @@
 @import './sections/timeline.css';
 @import './sections/gallery.css';
 @import './single/exhibition.css';
+@import './sections/steps.css';
+@import './pagination.css';
+@import './single/desk.css';
 
 /* CSS DEGUB SNIPPET  */
 /* * {

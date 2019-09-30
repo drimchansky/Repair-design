@@ -72,6 +72,9 @@
     justify-content: space-around;
     align-items: flex-start;
   }
+  .types__caption {
+    min-width: 320px;
+  }
   .design_types-wrapper {
     background: linear-gradient(to bottom, #fff 50%, var(--dark-gray) 50%);
   }
