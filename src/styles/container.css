@@ -20,7 +20,7 @@
   align-items: center;
 }
 .types_container {
-  padding: 25px 0 100px 0;
+  padding: 25px 0 59px 0;
 }
 .timeline_container {
   display: flex;
@@ -28,9 +28,7 @@
 }
 .gallery_container {
 }
-.design_container {
-  padding: 50px 0 250px;
-}
+
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
   .projects_container {
@@ -50,9 +48,6 @@
     align-items: flex-start;
   }
   .gallery_container {
-  }
-  .design_container {
-    padding: 160px 0 300px;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -55,6 +55,9 @@
 .timeline_button {
   margin-top: 40px;
 }
+.types_button {
+  left: -15px;
+}
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
   .button_fill {
@@ -89,8 +92,5 @@
   .button_thin {
     padding-top: 12px;
     padding-bottom: 12px;
-  }
-  .types_button {
-    left: -15px;
   }
 }

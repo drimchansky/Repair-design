@@ -49,6 +49,9 @@
 .gallery_title {
   color: var(--gold);
 }
+.design_title {
+  color: var(--gold);
+}
 /* TITLE MEDIA */
 @media screen and (min-width: 576px) {
 }
@@ -63,6 +66,9 @@
     color: var(--gold);
     text-align: left;
     font-size: 1.4em;
+  }
+  .design_title {
+    color: var(--dark);
   }
 }
 @media screen and (min-width: 1200px) {
