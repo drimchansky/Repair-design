@@ -10001,12 +10001,51 @@ function generateURL(id) {
 
 var _default = Videos;
 exports.default = _default;
+},{}],"js/exhib.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function SwitchShowCase() {
+  var context = document.querySelector('.gallery');
+  context.addEventListener('click', switchCase);
+}
+
+function switchCase(event) {
+  var showCases = document.querySelectorAll('.exhib__show-item');
+  var activeButton = document.querySelector('.exhib__type-button--active');
+  var pressedButton = event.target;
+  var pressedButtonType = pressedButton.dataset.type;
+  var activeCase = document.querySelector('.exhib__show-item--active');
+  var activeCaseType = activeCase.dataset.type;
+
+  if (event.target.classList.contains('exhib__type-button') && pressedButtonType !== activeCaseType) {
+    activeCase.classList.remove('exhib__show-item--active');
+    activeButton.classList.remove('exhib__type-button--active');
+    pressedButton.classList.add('exhib__type-button--active');
+    showCases.forEach(function (a) {
+      if (a.dataset.type === pressedButtonType) {
+        setTimeout(function () {
+          return a.classList.add('exhib__show-item--active');
+        }, 500);
+      }
+    });
+  }
+}
+
+var _default = SwitchShowCase;
+exports.default = _default;
 },{}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _swiper = _interopRequireDefault(require("swiper"));
 
 var _video = _interopRequireDefault(require("./video"));
+
+var _exhib = _interopRequireDefault(require("./exhib"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10030,7 +10069,8 @@ var mySwiper = new _swiper.default('.swiper-container', {
   }
 });
 (0, _video.default)();
-},{"swiper":"../node_modules/swiper/js/swiper.esm.bundle.js","./video":"js/video.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+(0, _exhib.default)();
+},{"swiper":"../node_modules/swiper/js/swiper.esm.bundle.js","./video":"js/video.js","./exhib":"js/exhib.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -10058,7 +10098,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3166" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36568" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -51,7 +51,7 @@
     align-items: flex-start;
   }
   .gallery_container {
-    padding: 10px 0 50px 0;
+    padding: 100px 0 50px 0;
   }
 }
 @media screen and (min-width: 1200px) {

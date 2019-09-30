@@ -1,7 +1,8 @@
 import Swiper from 'swiper';
 import Videos from './video';
+import SwitchShowCase from './exhib';
 
-let mySwiper = new Swiper('.swiper-container', {
+const mySwiper = new Swiper('.swiper-container', {
   loop: true,
   autoplay: {
     speed: 3000,
@@ -22,3 +23,4 @@ let mySwiper = new Swiper('.swiper-container', {
 });
 
 Videos();
+SwitchShowCase();
