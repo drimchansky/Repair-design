@@ -17,6 +17,14 @@
   outline: none;
   color: var(--gold);
 }
+.pagination__button:first-child:focus,
+.pagination__button:first-child:hover {
+  transform: translateX(-5px);
+}
+.pagination__button:last-child:focus,
+.pagination__button:last-child:hover {
+  transform: translateX(5px);
+}
 .pagination__bullet-list {
   list-style-type: none;
   padding: 0;
@@ -26,7 +34,7 @@
 }
 .pagination__bullet-item {
   display: inline;
-  padding: 4px;
+  padding: 7px;
 }
 .pagination__bullet {
   padding: 0 3px;
@@ -37,17 +45,20 @@
   background: none;
   font-size: 1.2em;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .pagination__bullet:focus,
 .pagination__bullet:hover {
   outline: none;
-  opacity: 0.8;
+  opacity: 0.7;
+  transform: scale(1.5);
 }
 .pagination__bullet--active {
   opacity: 1;
 }
 .desc_pagination {
-  margin-top: 100px;
+  position: absolute;
+  bottom: 0;
 }
 /* PAGINATION MEDIA */
 @media screen and (min-width: 576px) {

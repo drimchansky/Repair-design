@@ -1155,6 +1155,7 @@ template {
   }
   .steps_slider-wrapper {
     width: 100%;
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1934,6 +1935,7 @@ template {
   .steps__sidebar {
     width: 38%;
     display: inline-block;
+    position: relative;
   }
   .steps__main {
     width: 60%;
@@ -1945,16 +1947,66 @@ template {
     display: grid;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-    justify-items: stretch;
     list-style-type: none;
     padding: 0;
   }
   .steps__button-item {
+    margin: 50px 0 0 0;
   }
   .steps__button {
-    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    color: var(--white);
+    background: transparent;
+    border: none;
+    text-align: left;
+    height: 100%;
+    padding: 5px;
+    font-size: 1.3em;
+    position: relative;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .steps__button:hover,
+  .steps__button:focus {
+    outline: none;
+    opacity: 1;
+  }
+  .steps__button:hover.steps__button:before,
+  .steps__button:focus.steps__button:before {
+    outline: none;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .steps__button:before {
+    font-size: 1em;
+    transition: all 0.3s;
+    position: absolute;
+    top: -1.4em;
+    border-bottom: 2px solid var(--gold);
+    font-family: var(--title-font);
+  }
+  .steps__button:nth-child(1)::before {
+    content: attr(data-digit);
+  }
+  .steps__button:nth-child(2)::before {
+    content: attr(data-digit);
+  }
+  .steps__button:nth-child(3):before {
+    content: attr(data-digit);
+  }
+  .steps__button:nth-child(4):before {
+    content: attr(data-digit);
+  }
+  .steps__button:nth-child(5):before {
+    content: attr(data-digit);
+  }
+  .steps__button:nth-child(6):before {
+    content: attr(data-digit);
   }
   .steps__button--active {
+    opacity: 1;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1979,6 +2031,14 @@ template {
   outline: none;
   color: var(--gold);
 }
+.pagination__button:first-child:focus,
+.pagination__button:first-child:hover {
+  transform: translateX(-5px);
+}
+.pagination__button:last-child:focus,
+.pagination__button:last-child:hover {
+  transform: translateX(5px);
+}
 .pagination__bullet-list {
   list-style-type: none;
   padding: 0;
@@ -1988,7 +2048,7 @@ template {
 }
 .pagination__bullet-item {
   display: inline;
-  padding: 4px;
+  padding: 7px;
 }
 .pagination__bullet {
   padding: 0 3px;
@@ -1999,17 +2059,20 @@ template {
   background: none;
   font-size: 1.2em;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .pagination__bullet:focus,
 .pagination__bullet:hover {
   outline: none;
-  opacity: 0.8;
+  opacity: 0.7;
+  transform: scale(1.5);
 }
 .pagination__bullet--active {
   opacity: 1;
 }
 .desc_pagination {
-  margin-top: 100px;
+  position: absolute;
+  bottom: 0;
 }
 /* PAGINATION MEDIA */
 @media screen and (min-width: 576px) {
@@ -2020,40 +2083,46 @@ template {
 }
 
 /* DESK */
-.desk {
-}
-.desk__list {
-  list-style-type: none;
-  padding: 0;
-}
-.desk__item {
-  display: none;
-}
-.desk__item--active {
-  display: block;
-}
-.desk__counter {
-  font-size: 1.4em;
-  font-family: var(--title-font);
-  color: var(--white);
-}
-.desk__title {
-  font-family: var(--title-font);
-  color: var(--gold);
-  text-transform: uppercase;
-  font-size: 1.2em;
-  letter-spacing: 1px;
-}
-.desk__description {
-  color: var(--white);
-  line-height: 1.4em;
-}
+
 /* DESK MEDIA */
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
+  .desk {
+  }
+  .desk__list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .desk__item {
+    display: none;
+  }
+  .desk__item--active {
+    display: block;
+  }
+  .desk__counter {
+    font-size: 1.4em;
+    font-family: var(--title-font);
+    color: var(--white);
+  }
+  .desk__title {
+    font-family: var(--title-font);
+    color: var(--gold);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+  }
+  .desk__description {
+    color: var(--white);
+    font-size: 1.1em;
+    line-height: 1.5em;
+    max-width: 90%;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .desk__description {
+    font-size: 1.3em;
+  }
 }
 
 /* CSS DEGUB SNIPPET  */

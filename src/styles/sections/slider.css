@@ -95,6 +95,7 @@
   }
   .steps_slider-wrapper {
     width: 100%;
+    margin-top: 10px;
   }
 }
 @media screen and (min-width: 1200px) {

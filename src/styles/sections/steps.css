@@ -15,6 +15,7 @@
   .steps__sidebar {
     width: 38%;
     display: inline-block;
+    position: relative;
   }
   .steps__main {
     width: 60%;
@@ -24,16 +25,66 @@
   .steps__button-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: stretch;
     list-style-type: none;
     padding: 0;
   }
   .steps__button-item {
+    margin: 50px 0 0 0;
   }
   .steps__button {
-    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    color: var(--white);
+    background: transparent;
+    border: none;
+    text-align: left;
+    height: 100%;
+    padding: 5px;
+    font-size: 1.3em;
+    position: relative;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .steps__button:hover,
+  .steps__button:focus {
+    outline: none;
+    opacity: 1;
+  }
+  .steps__button:hover.steps__button:before,
+  .steps__button:focus.steps__button:before {
+    outline: none;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .steps__button:before {
+    font-size: 1em;
+    transition: all 0.3s;
+    position: absolute;
+    top: -1.4em;
+    border-bottom: 2px solid var(--gold);
+    font-family: var(--title-font);
+  }
+  .steps__button:nth-child(1)::before {
+    content: attr(data-digit);
+  }
+  .steps__button:nth-child(2)::before {
+    content: attr(data-digit);
+  }
+  .steps__button:nth-child(3):before {
+    content: attr(data-digit);
+  }
+  .steps__button:nth-child(4):before {
+    content: attr(data-digit);
+  }
+  .steps__button:nth-child(5):before {
+    content: attr(data-digit);
+  }
+  .steps__button:nth-child(6):before {
+    content: attr(data-digit);
   }
   .steps__button--active {
+    opacity: 1;
   }
 }
 @media screen and (min-width: 1200px) {
