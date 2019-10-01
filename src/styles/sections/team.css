@@ -40,6 +40,8 @@
   position: relative;
   z-index: 9;
   width: 100%;
+  object-fit: cover;
+  height: 350px;
 }
 .team__description {
   position: relative;

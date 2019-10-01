@@ -330,7 +330,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/main.css":[function(require,module,exports) {
+},{"./..\\..\\img\\icons\\size.png":[["size.89fdaa4a.png","img/icons/size.png"],"img/icons/size.png"],"./..\\..\\img\\icons\\tablet.png":[["tablet.59a08ffe.png","img/icons/tablet.png"],"img/icons/tablet.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/main.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
