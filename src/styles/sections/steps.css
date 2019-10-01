@@ -8,6 +8,8 @@
 @media screen and (min-width: 992px) {
   .steps {
     display: block;
+    background: var(--dark-gray);
+    padding-bottom: 100px;
   }
   .steps__sidebar {
     width: 38%;
@@ -19,12 +21,16 @@
     flex-direction: column;
   }
   .steps__button-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
     list-style-type: none;
     padding: 0;
   }
   .steps__button-item {
   }
   .steps__button {
+    width: 100%;
   }
   .steps__button--active {
   }

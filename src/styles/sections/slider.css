@@ -93,6 +93,9 @@
   .slider-wrapper_gallery {
     display: none;
   }
+  .steps_slider-wrapper {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
 }
