@@ -12,10 +12,20 @@
   display: block;
 }
 .desk__counter {
+  font-size: 1.4em;
+  font-family: var(--title-font);
+  color: var(--white);
 }
 .desk__title {
+  font-family: var(--title-font);
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 1px;
 }
 .desk__description {
+  color: var(--white);
+  line-height: 1.4em;
 }
 /* DESK MEDIA */
 @media screen and (min-width: 576px) {

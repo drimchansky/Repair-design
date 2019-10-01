@@ -398,6 +398,7 @@ template {
   box-sizing: border-box;
 }
 .page {
+  font-size: 16px;
   font-family: var(--main-font);
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -411,10 +412,24 @@ template {
 }
 /* PAGE MEDIA */
 @media screen and (min-width: 576px) {
+  /* .page {
+    font-size: 18px;
+  } */
 }
 @media screen and (min-width: 992px) {
+  /* .page {
+    font-size: 20px;
+  } */
 }
 @media screen and (min-width: 1200px) {
+  /* .page {
+    font-size: 22px;
+  } */
+}
+@media screen and (min-width: 2000px) {
+  /* .page {
+    font-size: 30px;
+  } */
 }
 
 /* CONTAINER */
@@ -1905,6 +1920,7 @@ template {
 /* STEPS */
 .steps {
   display: none;
+  font-size: 16px;
 }
 /* STEPS MEDIA */
 @media screen and (min-width: 576px) {
@@ -1983,10 +1999,20 @@ template {
   display: block;
 }
 .desk__counter {
+  font-size: 1.4em;
+  font-family: var(--title-font);
+  color: var(--white);
 }
 .desk__title {
+  font-family: var(--title-font);
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 1px;
 }
 .desk__description {
+  color: var(--white);
+  line-height: 1.4em;
 }
 /* DESK MEDIA */
 @media screen and (min-width: 576px) {

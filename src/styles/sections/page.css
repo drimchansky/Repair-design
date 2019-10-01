@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 .page {
+  font-size: 16px;
   font-family: var(--main-font);
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -16,8 +17,22 @@
 }
 /* PAGE MEDIA */
 @media screen and (min-width: 576px) {
+  /* .page {
+    font-size: 18px;
+  } */
 }
 @media screen and (min-width: 992px) {
+  /* .page {
+    font-size: 20px;
+  } */
 }
 @media screen and (min-width: 1200px) {
+  /* .page {
+    font-size: 22px;
+  } */
+}
+@media screen and (min-width: 2000px) {
+  /* .page {
+    font-size: 30px;
+  } */
 }
