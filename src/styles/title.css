@@ -39,6 +39,8 @@
 .title__imgwrap:after {
   right: -57px;
 }
+.title__description {
+}
 /* TOTLE MIXES */
 .control_title {
   color: var(--white);
