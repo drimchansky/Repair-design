@@ -39,6 +39,11 @@
 .title__imgwrap:after {
   right: -57px;
 }
+.title__description {
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+}
 /* TOTLE MIXES */
 .control_title {
   color: var(--white);
@@ -50,10 +55,17 @@
   color: var(--gold);
 }
 .design_title {
-  color: var(--gold);
+  color: var(--white);
+}
+.team_title {
+  color: var(--white);
+  max-width: 430px;
 }
 /* TITLE MEDIA */
 @media screen and (min-width: 576px) {
+  .title {
+    font-size: 18px;
+  }
 }
 @media screen and (min-width: 992px) {
   .title {
