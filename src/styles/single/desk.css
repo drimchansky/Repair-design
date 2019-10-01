@@ -1,26 +1,42 @@
 /* DESK */
-.desk {
-}
-.desk__list {
-  list-style-type: none;
-  padding: 0;
-}
-.desk__item {
-  display: none;
-}
-.desk__item--active {
-  display: block;
-}
-.desk__counter {
-}
-.desk__title {
-}
-.desk__description {
-}
+
 /* DESK MEDIA */
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
+  .desk {
+  }
+  .desk__list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .desk__item {
+    display: none;
+  }
+  .desk__item--active {
+    display: block;
+  }
+  .desk__counter {
+    font-size: 1.4em;
+    font-family: var(--title-font);
+    color: var(--white);
+  }
+  .desk__title {
+    font-family: var(--title-font);
+    color: var(--gold);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+  }
+  .desk__description {
+    color: var(--white);
+    font-size: 1.1em;
+    line-height: 1.5em;
+    max-width: 90%;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .desk__description {
+    font-size: 1.3em;
+  }
 }
