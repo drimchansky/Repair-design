@@ -1,22 +1,33 @@
 /* STEPS */
 .steps {
-}
-.steps__sidebar {
-}
-.steps__main {
-}
-.steps__button-list {
-}
-.steps__button-item {
-}
-.steps__button {
-}
-.steps__button--active {
+  display: none;
 }
 /* STEPS MEDIA */
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
+  .steps {
+    display: block;
+  }
+  .steps__sidebar {
+    width: 38%;
+    display: inline-block;
+  }
+  .steps__main {
+    width: 60%;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .steps__button-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .steps__button-item {
+  }
+  .steps__button {
+  }
+  .steps__button--active {
+  }
 }
 @media screen and (min-width: 1200px) {
 }

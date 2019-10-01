@@ -3,7 +3,13 @@
 }
 .pagination__button {
 }
+.pagination__bullet-list {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
 .pagination__bullet-item {
+  display: inline;
 }
 .pagination__bullet {
 }

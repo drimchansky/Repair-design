@@ -28,6 +28,8 @@
 }
 .gallery_container {
 }
+.steps_container {
+}
 
 /* CONTAINER MEDIA */
 @media screen and (min-width: 576px) {
@@ -48,6 +50,10 @@
     align-items: flex-start;
   }
   .gallery_container {
+  }
+  .steps_container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
