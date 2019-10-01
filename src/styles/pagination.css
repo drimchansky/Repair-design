@@ -1,0 +1,24 @@
+/* PAGINATION */
+.pagination {
+}
+.pagination__button {
+}
+.pagination__bullet-list {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+.pagination__bullet-item {
+  display: inline;
+}
+.pagination__bullet {
+}
+.pagination__bullet--active {
+}
+/* PAGINATION MEDIA */
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}

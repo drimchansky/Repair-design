@@ -1,0 +1,26 @@
+/* DESK */
+.desk {
+}
+.desk__list {
+  list-style-type: none;
+  padding: 0;
+}
+.desk__item {
+  display: none;
+}
+.desk__item--active {
+  display: block;
+}
+.desk__counter {
+}
+.desk__title {
+}
+.desk__description {
+}
+/* DESK MEDIA */
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+}
