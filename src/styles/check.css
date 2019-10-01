@@ -30,7 +30,7 @@
   stroke: var(--gold);
   stroke-width: 1px;
 }
-.sceck__square_dark {
+.form_dark .check__square {
   fill: var(--dark-gray);
 }
 
@@ -68,10 +68,11 @@
 }
 /* CHECK MIXES */
 .check_types {
-  margin-top: 20px;
+  margin-top: 15px;
 }
-.check_timeline {
-  margin-top: 1em;
+.check_timeline,
+.check_questions {
+  margin-top: 25px;
 }
 /* CHECK MEDIA */
 @media screen and (min-width: 992px) {
@@ -79,5 +80,14 @@
     order: 10;
     width: 100%;
     text-align: center;
+  }
+  .form_dark.form_control .check__square {
+    fill: white;
+  }
+  .form_dark.form_control .check__mark {
+    stroke: white;
+  }
+  .form_dark.form_control .check__input:checked + * .check__square {
+    fill: var(--gold);
   }
 }

@@ -3,27 +3,26 @@
   display: flex;
   flex-direction: column;
   max-width: 800px;
+  font-size: 16px;
 }
+
 .form__caption {
   text-align: center;
   margin: 0 auto;
   font-size: 1.2em;
 }
-.form__field {
-}
-.form__field:not(:first-child) {
-  margin-top: 10px;
-}
 .form__label {
+  padding: 5px 0 0;
   display: block;
   top: 0;
   right: 100%;
 }
+
 .form__input {
   display: block;
   width: 100%;
   border: none;
-  padding: 5px 0;
+  padding: 0 0 5px 0;
   color: inherit;
   border-bottom: 2px solid var(--white);
   transition: all 0.2s;
@@ -38,35 +37,78 @@
   border-bottom: 2px solid var(--gold);
 }
 /* FORM MIXES */
-.form_control {
-  color: var(--white);
-  margin-top: 30px;
-}
-.form_timeline {
+.form_dark {
   background: var(--dark-gray);
   color: var(--white);
+}
+.form_light {
+  background: #fff;
+  color: var(--dark-gray);
+}
+.form_control {
+  margin-top: 30px;
+}
+.form_control .form__label {
+  margin-top: 10px;
+}
+.form_timeline {
   width: 100%;
-  max-width: 400px;
+  max-width: 430px;
   padding: 2em 3em;
 }
-.form__field_control {
-  min-width: 230px;
+.form_timeline .form__label {
+  margin-top: 35px;
 }
-.form__field_timeline {
-  padding: 20px 0;
+.form_questions .form__label {
+  margin-top: 25px;
 }
+
+.form_questions {
+  width: 100%;
+  padding: 2em 3em;
+  margin: 30px auto 30px auto;
+}
+.form_questions .form__caption {
+  text-transform: uppercase;
+}
+.form_questions textarea {
+  height: 2em;
+}
+
 /* FORM */
 @media screen and (min-width: 576px) {
+  .form {
+    font-size: 18px;
+  }
+  .form_questions {
+    padding: 2em 5em;
+    align-items: center;
+  }
+  .questions_form-label-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form_questions .form__label {
+    width: 48%;
+  }
+  .form_questions .form__label_textarea {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 992px) {
-  .form_control {
+  .form_questions {
+    padding: 2em 10em;
+  }
+  .form_control.form_dark {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    color: var(--dark);
+    justify-content: space-around;
+    background: #fff;
+    color: var(--dark-gray);
   }
-  .form__field:not(:first-child) {
-    margin-top: 0;
+  .form_control .form__label {
+    width: 30%;
   }
   .form_timeline {
     max-width: 40%;
