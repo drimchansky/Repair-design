@@ -56,22 +56,22 @@
   max-width: 430px;
   padding: 2em 3em;
 }
-.form_timeline .form__label {
+.form_location .form__label {
   margin-top: 35px;
 }
-.form_questions .form__label {
+.form_location .form__label {
   margin-top: 25px;
 }
 
-.form_questions {
+.form_location {
   width: 100%;
   padding: 2em 3em;
   margin: 30px auto 30px auto;
 }
-.form_questions .form__caption {
+.form_location .form__caption {
   text-transform: uppercase;
 }
-.form_questions textarea {
+.form_location textarea {
   height: 2em;
 }
 
@@ -80,24 +80,24 @@
   .form {
     font-size: 18px;
   }
-  .form_questions {
+  .form_location {
     padding: 2em 5em;
     align-items: center;
   }
-  .questions_form-label-wrapper {
+  .location_form-label-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
-  .form_questions .form__label {
+  .form_location .form__label {
     width: 48%;
   }
-  .form_questions .form__label_textarea {
+  .form_location .form__label_textarea {
     width: 100%;
   }
 }
 @media screen and (min-width: 992px) {
-  .form_questions {
+  .form_location {
     padding: 2em 10em;
   }
   .form_control.form_dark {
