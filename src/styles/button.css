@@ -58,6 +58,11 @@
 .types_button {
   left: -15px;
 }
+.location_button {
+  margin: 20px auto 0 auto;
+  width: 100%;
+  max-width: 340px;
+}
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
   .button_fill {
@@ -82,9 +87,14 @@
   .timeline_button {
     margin-left: auto;
   }
+  .location_button {
+    margin-top: 30px;
+    padding: 1em 5em;
+  }
 }
 @media screen and (min-width: 992px) {
-  .control_button {
+  .control_button,
+  .location_button {
     width: 200px;
   }
 }

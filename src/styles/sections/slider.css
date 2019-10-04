@@ -45,6 +45,7 @@
 .gallery_slider {
   margin-top: 30px;
 }
+
 /* SLIDER MEDIA */
 @media screen and (min-width: 576px) {
   .slider {

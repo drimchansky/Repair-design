@@ -3,27 +3,26 @@
   display: flex;
   flex-direction: column;
   max-width: 800px;
+  font-size: 16px;
 }
+
 .form__caption {
   text-align: center;
   margin: 0 auto;
   font-size: 1.2em;
 }
-.form__field {
-}
-.form__field:not(:first-child) {
-  margin-top: 10px;
-}
 .form__label {
+  padding: 5px 0 0;
   display: block;
   top: 0;
   right: 100%;
 }
+
 .form__input {
   display: block;
   width: 100%;
   border: none;
-  padding: 5px 0;
+  padding: 0 0 5px 0;
   color: inherit;
   border-bottom: 2px solid var(--white);
   transition: all 0.2s;
@@ -38,35 +37,82 @@
   border-bottom: 2px solid var(--gold);
 }
 /* FORM MIXES */
-.form_control {
+.form_dark {
+  background: var(--dark);
   color: var(--white);
+}
+.form_light {
+  background: #fff;
+  color: var(--dark);
+}
+.form_control {
   margin-top: 30px;
+  background: var(--dark-gray);
+}
+.form_control .form__label {
+  margin-top: 10px;
 }
 .form_timeline {
-  background: var(--dark-gray);
-  color: var(--white);
   width: 100%;
-  max-width: 400px;
-  padding: 2em 3em;
+  max-width: 430px;
+  padding: 2em 2em;
 }
-.form__field_control {
-  min-width: 230px;
+.form_location .form__label {
+  margin-top: 35px;
 }
-.form__field_timeline {
-  padding: 20px 0;
+.form_location .form__label {
+  margin-top: 25px;
 }
+
+.form_location {
+  order: 1;
+  width: 100%;
+  padding: 2em 0.5em;
+  margin: 30px auto 30px auto;
+}
+.form_location .form__caption {
+  text-transform: uppercase;
+}
+.form_location textarea {
+  height: 2em;
+}
+
 /* FORM */
 @media screen and (min-width: 576px) {
+  .form {
+    font-size: 18px;
+  }
+  .form_location {
+    padding: 2em 5em;
+    align-items: center;
+  }
+  .location_form-label-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form_location .form__label {
+    width: 48%;
+  }
+  .form_location .form__label_textarea {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 992px) {
-  .form_control {
+  .form_location {
+    padding: 2em 10em;
+    margin-top: -200px;
+    z-index: 2;
+  }
+  .form_control.form_dark {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    background: #fff;
     color: var(--dark);
   }
-  .form__field:not(:first-child) {
-    margin-top: 0;
+  .form_control .form__label {
+    width: 30%;
   }
   .form_timeline {
     max-width: 40%;

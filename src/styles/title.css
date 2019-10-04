@@ -61,6 +61,17 @@
   color: var(--white);
   max-width: 430px;
 }
+.clients_title {
+  color: var(--dark-gray);
+  max-width: 430px;
+}
+.location_title {
+  color: var(--gold);
+  order: 3;
+  font-size: 12px;
+  margin-top: 20px;
+  max-width: 600px;
+}
 /* TITLE MEDIA */
 @media screen and (min-width: 576px) {
   .title {
@@ -110,6 +121,9 @@
   .steps_title h3 {
     text-align: left;
     line-height: 1.3;
+  }
+  .location_title {
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 1200px) {

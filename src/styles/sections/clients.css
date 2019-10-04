@@ -1,0 +1,110 @@
+/* CLIENTS */
+.clients {
+  font-size: 16px;
+}
+.clients__list {
+  padding: 0;
+  list-style-type: none;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.clients__item {
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  max-width: 370px;
+  padding: 10px 20px 50px 20px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.clients__person {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.clients__image {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+.clients__name {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: var(--title-font);
+  color: var(--dark-gray);
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.clients__review {
+  word-wrap: break-word;
+  text-align: left;
+  display: block;
+  color: var(--gray);
+}
+.clients__stats {
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  transform: translateY(30%);
+  display: flex;
+  width: 100%;
+  background: var(--gold);
+  color: #fff;
+}
+.clients__stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0.5em;
+  border-right: 2px solid #fff;
+}
+.clients__term {
+  width: 55%;
+  padding: 0.5em;
+}
+.clients__icon {
+  height: 30px;
+  width: 30px;
+}
+.clients__icon_size {
+  background: center / contain url(../../img/icons/size.png) no-repeat;
+}
+.clients__icon_tablet {
+  background: center / contain url(../../img/icons/tablet.png) no-repeat;
+}
+.clients__result {
+  margin-left: 10px;
+}
+/* CLIENTS MEDIA */
+@media screen and (min-width: 576px) {
+  .clients {
+    font-size: 18px;
+  }
+  .clients__stats {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .clients__list {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .clients__item {
+    transition: all 0.3s;
+    max-width: 300px;
+  }
+  .clients__item:hover {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    max-width: 370px;
+  }
+}

@@ -28,6 +28,9 @@
 @import './pagination.css';
 @import './single/desk.css';
 @import './sections/team.css';
+@import './sections/clients.css';
+@import './sections/location.css';
+@import './single/map.css';
 
 /* CSS DEGUB SNIPPET  */
 /* * {
