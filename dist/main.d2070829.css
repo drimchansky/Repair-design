@@ -679,18 +679,9 @@ template {
   border-bottom-color: var(--gray);
   opacity: 0.7;
 }
-
 /* NAV MIXES */
-.slider_nav {
-  background: var(--dark-gray);
-  height: auto;
-}
-.slider_nav .nav__list {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.footer_nav {
+  display: none;
 }
 /* NAV MEDIA */
 @media screen and (min-width: 576px) {
@@ -745,6 +736,10 @@ template {
   }
   .nav__link {
     font-size: 0.6em;
+  }
+  .footer_nav {
+    padding: 2em 0;
+    display: block;
   }
 }
 
@@ -2551,7 +2546,7 @@ template {
 
 /* MAP */
 .map {
-  width: 100%;
+  width: 90%;
   max-width: 800px;
   order: 2;
 }
