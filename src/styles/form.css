@@ -38,12 +38,12 @@
 }
 /* FORM MIXES */
 .form_dark {
-  background: var(--dark-gray);
+  background: var(--dark);
   color: var(--white);
 }
 .form_light {
   background: #fff;
-  color: var(--dark-gray);
+  color: var(--dark);
 }
 .form_control {
   margin-top: 30px;
@@ -100,13 +100,15 @@
 @media screen and (min-width: 992px) {
   .form_location {
     padding: 2em 10em;
+    margin-top: -200px;
+    z-index: 2;
   }
   .form_control.form_dark {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     background: #fff;
-    color: var(--dark-gray);
+    color: var(--dark);
   }
   .form_control .form__label {
     width: 30%;

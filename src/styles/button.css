@@ -93,7 +93,8 @@
   }
 }
 @media screen and (min-width: 992px) {
-  .control_button {
+  .control_button,
+  .location_button {
     width: 200px;
   }
 }

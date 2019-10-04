@@ -13,7 +13,7 @@
   width: 36px;
   background: var(--gold);
   border-radius: 50%;
-  padding: 5px;
+  padding: 8px;
   margin: 0.3em;
   display: inline-block;
 }
@@ -32,6 +32,30 @@
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
+  .location {
+    margin-top: 200px;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .location__link-list {
+    z-index: 1;
+  }
+  .location:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+  }
+  .webp .location {
+    background: center / cover url(../../img/bgs/location-bg.webp) no-repeat;
+  }
+  .no-webp .location {
+    background: center / cover url(../../img/bgs/location-bg.png) no-repeat;
+  }
 }
 @media screen and (min-width: 1200px) {
 }

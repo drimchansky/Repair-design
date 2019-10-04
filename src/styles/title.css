@@ -122,6 +122,9 @@
     text-align: left;
     line-height: 1.3;
   }
+  .location_title {
+    font-size: 18px;
+  }
 }
 @media screen and (min-width: 1200px) {
 }

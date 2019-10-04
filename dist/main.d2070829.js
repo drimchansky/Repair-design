@@ -335,7 +335,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/single/map.css":[function(require,module,exports) {
+},{"./..\\..\\img\\bgs\\location-bg.webp":[["location-bg.7ebc63bd.webp","img/bgs/location-bg.webp"],"img/bgs/location-bg.webp"],"./..\\..\\img\\bgs\\location-bg.png":[["location-bg.cd6ef64b.png","img/bgs/location-bg.png"],"img/bgs/location-bg.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/single/map.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);

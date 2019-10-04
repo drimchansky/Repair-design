@@ -22,6 +22,9 @@
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 992px) {
+  .map {
+    order: 5;
+  }
 }
 @media screen and (min-width: 1200px) {
 }
