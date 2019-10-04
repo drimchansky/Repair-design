@@ -265,7 +265,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\..\\img\\city-bg.webp":[["city-bg.a09600e5.webp","img/city-bg.webp"],"img/city-bg.webp"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/title.css":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles/title.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);

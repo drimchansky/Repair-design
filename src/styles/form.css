@@ -47,6 +47,7 @@
 }
 .form_control {
   margin-top: 30px;
+  background: var(--dark-gray);
 }
 .form_control .form__label {
   margin-top: 10px;
@@ -54,7 +55,7 @@
 .form_timeline {
   width: 100%;
   max-width: 430px;
-  padding: 2em 3em;
+  padding: 2em 2em;
 }
 .form_location .form__label {
   margin-top: 35px;

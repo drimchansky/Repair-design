@@ -107,6 +107,10 @@
   .slider_nav {
     margin-top: 50px;
   }
+  .footer_nav {
+    padding: 2em 0;
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .nav {
@@ -115,9 +119,5 @@
   }
   .nav__link {
     font-size: 0.6em;
-  }
-  .footer_nav {
-    padding: 2em 0;
-    display: block;
   }
 }
