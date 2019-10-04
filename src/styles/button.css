@@ -58,8 +58,10 @@
 .types_button {
   left: -15px;
 }
-.questions_button {
-  margin-top: 20px;
+.location_button {
+  margin: 20px auto 0 auto;
+  width: 100%;
+  max-width: 340px;
 }
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {

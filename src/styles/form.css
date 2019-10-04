@@ -64,8 +64,9 @@
 }
 
 .form_location {
+  order: 1;
   width: 100%;
-  padding: 2em 3em;
+  padding: 2em 0.5em;
   margin: 30px auto 30px auto;
 }
 .form_location .form__caption {

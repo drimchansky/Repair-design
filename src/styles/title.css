@@ -65,6 +65,13 @@
   color: var(--dark-gray);
   max-width: 430px;
 }
+.location_title {
+  color: var(--gold);
+  order: 3;
+  font-size: 12px;
+  margin-top: 20px;
+  max-width: 600px;
+}
 /* TITLE MEDIA */
 @media screen and (min-width: 576px) {
   .title {

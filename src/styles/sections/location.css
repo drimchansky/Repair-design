@@ -1,14 +1,32 @@
 /* LOCATION */
 .location {
-}
-
-.location__address {
+  background: var(--dark-gray);
 }
 .location__link-list {
+  order: 4;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
 }
 .location__link-item {
+  height: 36px;
+  width: 36px;
+  background: var(--gold);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0.3em;
+  display: inline-block;
 }
 .location__link {
+}
+.location__link svg {
+  fill: #fff;
+}
+.location__map {
+  order: 2;
+  background: green;
+  height: 100%;
+  width: 100%;
 }
 /* LOCATION MEDIA */
 @media screen and (min-width: 576px) {
