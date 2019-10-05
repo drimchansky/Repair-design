@@ -16,24 +16,6 @@
     </script>
   </script>
   <script>
-    ymaps.ready(init);
-    function init() {
-      var myMap = new ymaps.Map("map", {
-        center: [47.257613, 39.698118],
-        zoom: 15,
-      });
-
-    }
-    var myGeoObject = new ymaps.GeoObject({
-      geometry: {
-        type: "Point", // тип геометрии - точка
-        coordinates: [47.2, 39.6] // координаты точки
-      }
-    });
-    myMap.geoObjects.add(myGeoObject);
-    var myPlacemark = new ymaps.Placemark([55.8, 37.6]);
-    myMap.geoObjects.add(myPlacemark);
-
     document.documentElement.classList.remove("no-js");
 
     // <!-- Fix chrome mobile vh -->
@@ -1401,7 +1383,7 @@
     </nav>
   </footer>
 
-
+  <script src="./js/appear.js"></script>
   <script src="./js/index.js"></script>
 </body>
 
