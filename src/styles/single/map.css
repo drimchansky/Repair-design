@@ -1,7 +1,8 @@
 /* MAP */
 .map {
-  width: 90%;
+  width: 100%;
   max-width: 800px;
+  margin-top: 10px;
   order: 2;
 }
 .map__wrapper {
@@ -16,7 +17,6 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: lightgreen;
 }
 /* MAP MEDIA */
 @media screen and (min-width: 576px) {

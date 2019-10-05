@@ -57,6 +57,9 @@
   max-width: 430px;
   padding: 2em 2em;
 }
+.form_timeline .form__caption {
+  padding: 20px 0;
+}
 .form_location .form__label {
   margin-top: 35px;
 }
@@ -116,6 +119,13 @@
   }
   .form_timeline {
     max-width: 40%;
+  }
+  .form_timeline .form__caption {
+    padding: 35px 0 20px 0;
+    font-size: 1.7em;
+  }
+  .form_timeline .form__label {
+    padding-top: 20px;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -11,7 +11,29 @@
   <title>Repair-Design</title>
 
   <script src="js/modernizr-custom-min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<0d3bbd75-5a8e-4c62-9bcf-587d7aed7f48>&lang=ru_RU"
+    type="text/javascript">
+    </script>
+  </script>
   <script>
+    ymaps.ready(init);
+    function init() {
+      var myMap = new ymaps.Map("map", {
+        center: [47.257613, 39.698118],
+        zoom: 15,
+      });
+
+    }
+    var myGeoObject = new ymaps.GeoObject({
+      geometry: {
+        type: "Point", // тип геометрии - точка
+        coordinates: [47.2, 39.6] // координаты точки
+      }
+    });
+    myMap.geoObjects.add(myGeoObject);
+    var myPlacemark = new ymaps.Placemark([55.8, 37.6]);
+    myMap.geoObjects.add(myPlacemark);
+
     document.documentElement.classList.remove("no-js");
 
     // <!-- Fix chrome mobile vh -->
@@ -1352,7 +1374,7 @@
       <!-- MAP -->
       <div class="map">
         <div class="map__wrapper">
-          <div class="map__inner">
+          <div class="map__inner" id="map">
 
           </div>
         </div>

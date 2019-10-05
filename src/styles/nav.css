@@ -20,6 +20,7 @@
 }
 .nav__list {
   display: none;
+  margin: 0;
 }
 .nav__number {
   color: var(--white);
@@ -108,14 +109,25 @@
     margin-top: 50px;
   }
   .footer_nav {
-    padding: 2em 0;
     display: block;
+  }
+  .footer_nav .nav__link {
+    padding: 2em 0;
+    border-top: 1.5px solid transparent;
+  }
+  .footer_nav .nav__link:hover,
+  .footer_nav .nav__link:focus {
+    outline: none;
+    border-top: 1.5px solid var(--white);
   }
 }
 @media screen and (min-width: 1200px) {
   .nav {
     height: 10vh;
     font-size: 24px;
+  }
+  .footer_nav {
+    height: auto;
   }
   .nav__link {
     font-size: 0.6em;
