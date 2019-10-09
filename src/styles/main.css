@@ -31,6 +31,7 @@
 @import './sections/clients.css';
 @import './sections/location.css';
 @import './single/map.css';
+@import './stub.css';
 
 /* CSS DEGUB SNIPPET  */
 /* * {

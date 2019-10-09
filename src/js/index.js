@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import Videos from './video';
 import Exhib from './Exhib';
 import './steps';
+import './stub';
 
 const mySwiper = new Swiper('.swiper-container', {
   loop: true,

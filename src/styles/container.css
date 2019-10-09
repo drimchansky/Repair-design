@@ -80,6 +80,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .types_container {
+    padding: 60px 0 59px 0;
+  }
 }
 @media screen and (min-width: 1200px) {
 }
