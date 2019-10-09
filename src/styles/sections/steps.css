@@ -72,22 +72,22 @@
     font-family: var(--title-font);
   }
   .steps__button:nth-child(1)::before {
-    content: attr(data-digit);
+    content: attr(data-index);
   }
   .steps__button:nth-child(2)::before {
-    content: attr(data-digit);
+    content: attr(data-index);
   }
   .steps__button:nth-child(3):before {
-    content: attr(data-digit);
+    content: attr(data-index);
   }
   .steps__button:nth-child(4):before {
-    content: attr(data-digit);
+    content: attr(data-index);
   }
   .steps__button:nth-child(5):before {
-    content: attr(data-digit);
+    content: attr(data-index);
   }
   .steps__button:nth-child(6):before {
-    content: attr(data-digit);
+    content: attr(data-index);
   }
   .steps__button--active {
     opacity: 1;

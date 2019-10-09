@@ -10001,7 +10001,7 @@ function generateURL(id) {
 
 var _default = Videos;
 exports.default = _default;
-},{}],"js/exhib.js":[function(require,module,exports) {
+},{}],"js/Exhib.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10009,7 +10009,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-function SwitchShowCase() {
+function Exhib() {
   var context = document.querySelector('.gallery');
   context.addEventListener('click', switchCase);
 }
@@ -10036,8 +10036,74 @@ function switchCase(event) {
   }
 }
 
-var _default = SwitchShowCase;
+var _default = Exhib;
 exports.default = _default;
+},{}],"js/steps.js":[function(require,module,exports) {
+(function () {
+  var context = document.getElementById('steps');
+  var buttons = context.querySelectorAll('.steps__button');
+  var bullets = context.querySelectorAll('.pagination__bullet');
+  var images = context.querySelectorAll('.steps__image');
+  var desks = context.querySelectorAll('.desk__item');
+
+  var pressButton = function pressButton(event) {
+    // currently active
+    var currentBtn = context.querySelector('.steps__button--active');
+    var currentImg = context.querySelector('.steps__image--active');
+    var currentPag = context.querySelector('.pagination__bullet--active');
+    var currentDesk = context.querySelector('.desk__item--active');
+    var pressedIndex = event.target.dataset.index;
+
+    if (event.target.dataset.index !== currentBtn.dataset.index) {
+      // change button
+      currentBtn.classList.remove('steps__button--active');
+      buttons.forEach(function (item) {
+        if (item.dataset.index === pressedIndex) {
+          item.classList.add('steps__button--active');
+        }
+      }); // change pagination
+
+      currentPag.classList.remove('pagination__bullet--active');
+      bullets.forEach(function (item) {
+        if (item.dataset.index === pressedIndex) {
+          item.classList.add('pagination__bullet--active');
+        }
+      }); // change image
+
+      currentImg.classList.remove('steps__image--active');
+      images.forEach(function (item) {
+        if (item.dataset.index === pressedIndex) {
+          item.classList.add('steps__image--active');
+        }
+      }); // change desk
+
+      currentDesk.classList.remove('desk__item--active');
+      desks.forEach(function (item) {
+        if (item.dataset.index === pressedIndex) {
+          item.classList.add('desk__item--active');
+        }
+      });
+    }
+  };
+
+  var pressPagination = function pressPagination() {
+    console.log('pagination');
+  };
+
+  var pressArrow = function pressArrow() {
+    console.log('arrow');
+  };
+
+  context.addEventListener('click', function (event) {
+    if (event.target.id === 'steps-button') {
+      pressButton(event);
+    } else if (event.target.id === 'steps-arrow') {
+      pressArrow(event);
+    } else if (event.target.id === 'steps-pagination') {
+      pressPagination(event);
+    }
+  });
+})();
 },{}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -10045,7 +10111,9 @@ var _swiper = _interopRequireDefault(require("swiper"));
 
 var _video = _interopRequireDefault(require("./video"));
 
-var _exhib = _interopRequireDefault(require("./exhib"));
+var _Exhib = _interopRequireDefault(require("./Exhib"));
+
+require("./steps");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10069,8 +10137,8 @@ var mySwiper = new _swiper.default('.swiper-container', {
   }
 });
 (0, _video.default)();
-(0, _exhib.default)();
-},{"swiper":"../node_modules/swiper/js/swiper.esm.bundle.js","./video":"js/video.js","./exhib":"js/exhib.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+(0, _Exhib.default)();
+},{"swiper":"../node_modules/swiper/js/swiper.esm.bundle.js","./video":"js/video.js","./Exhib":"js/Exhib.js","./steps":"js/steps.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -10098,7 +10166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1222" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2178" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

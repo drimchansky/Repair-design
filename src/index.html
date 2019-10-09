@@ -11,16 +11,10 @@
   <title>Repair-Design</title>
 
   <script async src="js/modernizr-custom-min.js"></script>
-  <script async src="js/lazy.js"></script>
-  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=<0d3bbd75-5a8e-4c62-9bcf-587d7aed7f48>&lang=ru_RU"
-    type="text/javascript">
-    </script>
-  </script>
+
   <script>
-
     document.documentElement.classList.remove("no-js");
-
-    // <!-- Fix chrome mobile vh -->
+    //
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
     window.addEventListener('resize', () => {
@@ -28,7 +22,6 @@
       document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
   </script>
-  <!-- height: calc(var(--vh, 1vh) * 100); -->
 </head>
 
 <body class="page__body" id="page">
@@ -978,7 +971,7 @@
   </section>
 
   <!-- STEPS -->
-  <section class="steps">
+  <section class="steps" id="steps">
     <div class="container steps_container">
 
       <!-- LEFT SIDE -->
@@ -993,7 +986,7 @@
         <div class="desk">
           <ul class="desk__list">
             <!-- 1/6 -->
-            <li class="desk__item desk__item--active">
+            <li class="desk__item desk__item--active" data-index="1">
               <div class="desk__counter">1/6</div>
               <h4 class="desk__title">Departure for<br>measurements premises</h4>
               <p class="desk__description">After your call, we go to you to consult and measure the premises of your
@@ -1004,7 +997,7 @@
                 apartment as a whole and its individual stages.</p>
             </li>
             <!-- 2/6 -->
-            <li class="desk__item">
+            <li class="desk__item" data-index="2">
               <div class="desk__counter">2/6</div>
               <h4 class="desk__title">Fish stars seasons meat brought gathering</h4>
               <p class="desk__description">Saying place in very gathered saw from subdue light two them. Make from own
@@ -1014,7 +1007,7 @@
                 from fly appear she'd his wherein he blessed dry spirit, evening their. Moveth sea.</p>
             </li>
             <!-- 3/6 -->
-            <li class="desk__item">
+            <li class="desk__item" data-index="3">
               <div class="desk__counter">3/6</div>
               <h4 class="desk__title">Moved fifth brought all open</h4>
               <p class="desk__description">Had all herb replenish firmament female. Itself their saying given very make.
@@ -1027,7 +1020,7 @@
                 Over.</p>
             </li>
             <!-- 4/6 -->
-            <li class="desk__item">
+            <li class="desk__item" data-index="4">
               <div class="desk__counter">4/6</div>
               <h4 class="desk__title">Lights don't i one multiply fourth</h4>
               <p class="desk__description">After your call, we go to you to consult and measure the premises of your
@@ -1038,7 +1031,7 @@
                 apartment as a whole and its individual stages.</p>
             </li>
             <!-- 5/6 -->
-            <li class="desk__item">
+            <li class="desk__item" data-index="5">
               <div class="desk__counter">5/6</div>
               <h4 class="desk__title">Moveth. Evening fourth lesser set</h4>
               <p class="desk__description">Saying place in very gathered saw from subdue light two them. Make from own
@@ -1048,7 +1041,7 @@
                 from fly appear she'd his wherein he blessed dry spirit, evening their. Moveth sea.</p>
             </li>
             <!-- 6/6 -->
-            <li class="desk__item">
+            <li class="desk__item" data-index="6">
               <div class="desk__counter">6/6</div>
               <h4 class="desk__title">Had night called shall abundantly</h4>
               <p class="desk__description">
@@ -1070,44 +1063,47 @@
 
         <!-- PAGINATION -->
         <div class="pagination desc_pagination">
-          <button class="pagination__button">&#8592</button>
+          <button class="pagination__button" id="steps-arrow">&#8592</button>
           <ul class="pagination__bullet-list">
             <li class="pagination__bullet-item">
-              <button class="pagination__bullet pagination__bullet--active">&#9679;</button>
+              <button class="pagination__bullet pagination__bullet--active" data-index="1"
+                id="steps-pagination">&#9679;</button>
             </li>
             <li class="pagination__bullet-item">
-              <button class="pagination__bullet">&#9679;</button>
+              <button class="pagination__bullet" id="steps-pagination" data-index="2">&#9679;</button>
             </li>
             <li class="pagination__bullet-item">
-              <button class="pagination__bullet">&#9679;</button>
+              <button class="pagination__bullet" id="steps-pagination" data-index="3">&#9679;</button>
             </li>
             <li class="pagination__bullet-item">
-              <button class="pagination__bullet">&#9679;</button>
+              <button class="pagination__bullet" id="steps-pagination" data-index="4">&#9679;</button>
             </li>
             <li class="pagination__bullet-item">
-              <button class="pagination__bullet">&#9679;</button>
+              <button class="pagination__bullet" id="steps-pagination" data-index="5">&#9679;</button>
             </li>
             <li class="pagination__bullet-item">
-              <button class="pagination__bullet">&#9679;</button>
+              <button class="pagination__bullet" id="steps-pagination" data-index="6">&#9679;</button>
             </li>
           </ul>
-          <button class="pagination__button">&#8594;</button>
+          <button class="pagination__button" id="steps-arrow">&#8594;</button>
         </div>
       </aside>
 
       <!-- RIGHT SIDE -->
       <div class="steps__main">
         <ul class="steps__button-list">
-          <li class="steps__button-item"><button class="steps__button steps__button--active"
-              data-digit="01">Departureto<br>room measurements</button></li>
-          <li class="steps__button-item"><button class="steps__button" data-digit="02">Compilation<br>
+          <li class="steps__button-item"><button class="steps__button steps__button--active" id="steps-button"
+              data-index="1">Departureto<br>room measurements</button></li>
+          <li class="steps__button-item"><button class="steps__button" id="steps-button" data-index="2">Compilation<br>
               estimates</button></li>
-          <li class="steps__button-item"><button class="steps__button" data-digit="03">Development<br> project
-              design</button> </li>
-          <li class="steps__button-item"><button class="steps__button" data-digit="04">Purchasing Supplies</button></li>
-          <li class="steps__button-item"><button class="steps__button" data-digit="05">Repair finishing work</button>
+          <li class="steps__button-item"><button class="steps__button" id="steps-button" data-index="3">Development<br>
+              project design</button> </li>
+          <li class="steps__button-item"><button class="steps__button" id="steps-button" data-index="4">Purchasing
+              Supplies</button></li>
+          <li class="steps__button-item"><button class="steps__button" id="steps-button" data-index="5">Repair
+              finishing work</button>
           </li>
-          <li class="steps__button-item"><button class="steps__button" data-digit="06">Development<br>
+          <li class="steps__button-item"><button class="steps__button" id="steps-button" data-index="6">Development<br>
               project design</button></li>
         </ul>
 
@@ -1118,32 +1114,33 @@
               <picture>
                 <source srcset="./img/mail.png" media="(max-width: 992px)">
                 <source srcset="./img/steps/steps-1.webp" type="image/webp">
-                <img src="./img/steps/steps-1.jpg" class="steps__image steps__image--active" alt="Alt Text!">
+                <img src="./img/steps/steps-1.jpg" class="steps__image steps__image--active" id="steps-image"
+                  data-index="1" alt="Alt Text!">
               </picture>
               <picture>
                 <source srcset="./img/mail.png" media="(max-width: 992px)">
                 <source srcset="./img/steps/steps-2.webp" type="image/webp">
-                <img src="./img/steps/steps-2.jpg" class="steps__image" alt="Alt Text!">
+                <img src="./img/steps/steps-2.jpg" class="steps__image" id="steps-image" data-index="2" alt="Alt Text!">
               </picture>
               <picture>
                 <source srcset="./img/mail.png" media="(max-width: 992px)">
                 <source srcset="./img/steps/steps-3.webp" type="image/webp">
-                <img src="./img/steps/steps-3.jpg" class="steps__image" alt="Alt Text!">
+                <img src="./img/steps/steps-3.jpg" class="steps__image" id="steps-image" data-index="3" alt="Alt Text!">
               </picture>
               <picture>
                 <source srcset="./img/mail.png" media="(max-width: 992px)">
                 <source srcset="./img/steps/steps-4.webp" type="image/webp">
-                <img src="./img/steps/steps-4.jpg" class="steps__image" alt="Alt Text!">
+                <img src="./img/steps/steps-4.jpg" class="steps__image" id="steps-image" data-index="4" alt="Alt Text!">
               </picture>
               <picture>
                 <source srcset="./img/mail.png" media="(max-width: 992px)">
                 <source srcset="./img/steps/steps-5.webp" type="image/webp">
-                <img src="./img/steps/steps-5.jpg" class="steps__image" alt="Alt Text!">
+                <img src="./img/steps/steps-5.jpg" class="steps__image" id="steps-image" data-index="5" alt="Alt Text!">
               </picture>
               <picture>
                 <source srcset="./img/mail.png" media="(max-width: 992px)">
                 <source srcset="./img/steps/steps-6.webp" type="image/webp">
-                <img src="./img/steps/steps-6.jpg" class="steps__image" alt="Alt Text!">
+                <img src="./img/steps/steps-6.jpg" class="steps__image" id="steps-image" data-index="6" alt="Alt Text!">
               </picture>
             </div>
 
@@ -1391,7 +1388,10 @@
     </nav>
   </footer>
 
-  <script defer src="./js/appear.js"></script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<0d3bbd75-5a8e-4c62-9bcf-587d7aed7f48>&lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="./js/appear.js"></script>
   <script src="./js/index.js"></script>
 </body>
 

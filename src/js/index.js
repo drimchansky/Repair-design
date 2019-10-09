@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 import Videos from './video';
-import SwitchShowCase from './exhib';
+import Exhib from './Exhib';
+import './steps';
 
 const mySwiper = new Swiper('.swiper-container', {
   loop: true,
@@ -23,4 +24,4 @@ const mySwiper = new Swiper('.swiper-container', {
 });
 
 Videos();
-SwitchShowCase();
+Exhib();

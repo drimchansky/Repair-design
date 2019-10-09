@@ -1,4 +1,4 @@
-function SwitchShowCase() {
+function Exhib() {
   const context = document.querySelector('.gallery');
   context.addEventListener('click', switchCase);
 }
@@ -11,10 +11,7 @@ function switchCase(event) {
   const activeCase = document.querySelector('.exhib__show-item--active');
   const activeCaseType = activeCase.dataset.type;
 
-  if (
-    event.target.classList.contains('exhib__type-button') &&
-    pressedButtonType !== activeCaseType
-  ) {
+  if (event.target.classList.contains('exhib__type-button') && pressedButtonType !== activeCaseType) {
     activeCase.classList.remove('exhib__show-item--active');
 
     activeButton.classList.remove('exhib__type-button--active');
@@ -28,4 +25,4 @@ function switchCase(event) {
   }
 }
 
-export default SwitchShowCase;
+export default Exhib;
