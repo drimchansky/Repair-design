@@ -51,7 +51,6 @@
 .pagination__bullet:hover {
   outline: none;
   opacity: 0.7;
-  transform: scale(1.5);
 }
 .pagination__bullet--active {
   opacity: 1;
