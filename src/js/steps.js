@@ -46,16 +46,9 @@
       });
     }
   };
-  const pressArrow = () => {
-    console.log('arrow');
-  };
 
   context.addEventListener('click', event => {
-    if (event.target.id === 'steps-button') {
-      pressButton(event);
-    } else if (event.target.id === 'steps-arrow') {
-      pressArrow(event);
-    } else if (event.target.id === 'steps-pagination') {
+    if (event.target.id === 'steps-button' || event.target.id === 'steps-pagination') {
       pressButton(event);
     }
   });
