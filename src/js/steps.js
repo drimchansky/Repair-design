@@ -46,9 +46,6 @@
       });
     }
   };
-  const pressPagination = () => {
-    console.log('pagination');
-  };
   const pressArrow = () => {
     console.log('arrow');
   };
@@ -59,7 +56,7 @@
     } else if (event.target.id === 'steps-arrow') {
       pressArrow(event);
     } else if (event.target.id === 'steps-pagination') {
-      pressPagination(event);
+      pressButton(event);
     }
   });
 })();

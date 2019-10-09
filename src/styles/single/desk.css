@@ -9,12 +9,20 @@
   .desk__list {
     list-style-type: none;
     padding: 0;
+    overflow: hidden;
+    position: relative;
   }
   .desk__item {
-    display: none;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.7s;
   }
   .desk__item--active {
-    display: block;
+    position: relative;
+    transform: none;
+    opacity: 1;
   }
   .desk__counter {
     font-size: 1.4em;

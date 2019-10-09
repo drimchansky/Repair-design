@@ -10086,10 +10086,6 @@ exports.default = _default;
     }
   };
 
-  var pressPagination = function pressPagination() {
-    console.log('pagination');
-  };
-
   var pressArrow = function pressArrow() {
     console.log('arrow');
   };
@@ -10100,7 +10096,7 @@ exports.default = _default;
     } else if (event.target.id === 'steps-arrow') {
       pressArrow(event);
     } else if (event.target.id === 'steps-pagination') {
-      pressPagination(event);
+      pressButton(event);
     }
   });
 })();
