@@ -6,7 +6,7 @@
   --gray: #4f4f4f;
   --gold: #e3b873;
   --lightgray: #b2b2b2;
-  --title-font: Yeseva One;
-  --main-font: FuturaBookC;
-  --caption-font: FuturaDemiC;
+  --title-font: Yeseva One, sans-serif;
+  --main-font: FuturaBookC, sans-serif;
+  --caption-font: FuturaDemiC, sans-serif;
 }
