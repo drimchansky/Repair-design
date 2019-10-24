@@ -6,7 +6,8 @@
   "scripts": {
     "watch": "parcel src/index.html ./ --no-cache",
     "build": "parcel build src/index.html --public-url ./ --out-dir ./prod --no-cache",
-    "clear": "rimraf dist/ prod/"
+    "clear": "rimraf dist/ prod/",
+    "lint": "node -e console.clear() && stylelint src/styles/**/*.css"
   },
   "author": "DRIMchansky",
   "license": "ISC",
@@ -41,5 +42,10 @@
         "importFrom": "./src/styles/properties.css"
       }
     }
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard"
+    ]
   }
 }
