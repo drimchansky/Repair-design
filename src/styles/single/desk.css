@@ -3,46 +3,54 @@
 /* DESK MEDIA */
 @media screen and (min-width: 576px) {
 }
+
 @media screen and (min-width: 992px) {
   .desk {
   }
+
   .desk__list {
-    list-style-type: none;
+    position: relative;
     padding: 0;
     overflow: hidden;
-    position: relative;
+    list-style-type: none;
   }
+
   .desk__item {
     position: absolute;
     display: block;
     opacity: 0;
-    transform: translateX(100%);
     transition: opacity 0.7s;
+    transform: translateX(100%);
   }
+
   .desk__item--active {
     position: relative;
-    transform: none;
     opacity: 1;
+    transform: none;
   }
+
   .desk__counter {
-    font-size: 1.4em;
     font-family: var(--title-font);
+    font-size: 1.4em;
     color: var(--white);
   }
+
   .desk__title {
     font-family: var(--title-font);
+    font-size: 1.2em;
     color: var(--gold);
     text-transform: uppercase;
-    font-size: 1.2em;
     letter-spacing: 1px;
   }
+
   .desk__description {
-    color: var(--white);
+    max-width: 90%;
     font-size: 1.1em;
     line-height: 1.5em;
-    max-width: 90%;
+    color: var(--white);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .desk__description {
     font-size: 1.3em;

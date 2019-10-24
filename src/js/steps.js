@@ -1,6 +1,5 @@
 (function() {
   const context = document.getElementById('steps');
-
   const buttons = context.querySelectorAll('.steps__button');
   const bullets = context.querySelectorAll('.pagination__bullet');
   const images = context.querySelectorAll('.steps__image');

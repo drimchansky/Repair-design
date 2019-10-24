@@ -2,28 +2,32 @@
 .gallery {
   background: linear-gradient(to bottom, #fff 65%, var(--dark-gray) 35%);
 }
+
 /* GALLERY MEDIA */
 @media screen and (min-width: 576px) {
 }
+
 @media screen and (min-width: 992px) {
   .gallery {
     position: relative;
     margin-top: 70px;
   }
-  .gallery:before {
+
+  .gallery::before {
     position: absolute;
-    content: '';
     left: 0;
-    left: 0;
+    z-index: 0;
     width: 100%;
     height: 100%;
+    content: '';
     background: rgba(1, 1, 1, 0.7);
-    z-index: 0;
   }
+
   .no-webp .gallery,
   .no-js .gallery {
     background: center / cover url(../../img/gallery-bg.jpg) no-repeat;
   }
+
   .webp .gallery {
     background: center / cover url(../../img/gallery-bg.webp) no-repeat;
   }

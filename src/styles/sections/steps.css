@@ -3,98 +3,118 @@
   display: none;
   font-size: 16px;
 }
+
 /* STEPS MEDIA */
 @media screen and (min-width: 576px) {
 }
+
 @media screen and (min-width: 992px) {
   .steps {
     display: block;
-    background: var(--dark-gray);
     padding-bottom: 100px;
+    background: var(--dark-gray);
   }
+
   .steps__sidebar {
-    width: 38%;
-    display: inline-block;
     position: relative;
+    display: inline-block;
+    width: 38%;
   }
+
   .steps__main {
-    width: 60%;
     display: inline-flex;
     flex-direction: column;
+    width: 60%;
   }
+
   .steps__image {
+    position: absolute;
     opacity: 0;
     transition: opacity 0.7s ease-in-out;
-    position: absolute;
   }
+
   .steps__image--active {
     position: relative;
     opacity: 1;
   }
+
   .steps__button-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    list-style-type: none;
     padding: 0;
+    list-style-type: none;
   }
+
   .steps__button-item {
     margin: 50px 0 0 0;
   }
+
   .steps__button {
+    position: relative;
     display: flex;
     align-items: flex-start;
-    color: var(--white);
-    background: transparent;
-    border: none;
-    text-align: left;
     height: 100%;
     padding: 5px;
     font-size: 1.3em;
-    position: relative;
-    opacity: 0.5;
+    color: var(--white);
+    text-align: left;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    opacity: 0.5;
     transition: all 0.3s;
   }
+
   .steps__button:hover,
   .steps__button:focus {
     outline: none;
     opacity: 1;
   }
-  .steps__button:hover.steps__button:before,
-  .steps__button:focus.steps__button:before {
-    outline: none;
+
+  .steps__button:hover.steps__button::before,
+  .steps__button:focus.steps__button::before {
     padding: 0 5px;
     text-align: center;
+    outline: none;
   }
-  .steps__button:before {
-    font-size: 1em;
-    transition: all 0.3s;
+
+  .steps__button::before {
     position: absolute;
     top: -1.4em;
-    border-bottom: 2px solid var(--gold);
     font-family: var(--title-font);
+    font-size: 1em;
+    border-bottom: 2px solid var(--gold);
+    transition: all 0.3s;
   }
+
   .steps__button:nth-child(1)::before {
     content: attr(data-index);
   }
+
   .steps__button:nth-child(2)::before {
     content: attr(data-index);
   }
-  .steps__button:nth-child(3):before {
+
+  .steps__button:nth-child(3)::before {
     content: attr(data-index);
   }
-  .steps__button:nth-child(4):before {
+
+  .steps__button:nth-child(4)::before {
     content: attr(data-index);
   }
-  .steps__button:nth-child(5):before {
+
+  .steps__button:nth-child(5)::before {
     content: attr(data-index);
   }
-  .steps__button:nth-child(6):before {
+
+  .steps__button:nth-child(6)::before {
     content: attr(data-index);
   }
+
   .steps__button--active {
     opacity: 1;
   }
 }
+
 @media screen and (min-width: 1200px) {
 }

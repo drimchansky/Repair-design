@@ -1,37 +1,44 @@
 /* BUTTON */
 .button {
-  cursor: pointer;
   font-family: var(--caption-font);
-  text-transform: uppercase;
-  color: var(--white);
-  border-radius: 2px;
   font-size: 16px;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
   transition: filter 0.2s;
   transition: box-shadow 0.1s;
 }
+
 .button:hover {
   filter: contrast(120%);
 }
+
 .button_fill {
-  background: var(--gold);
   color: white;
+  background: var(--gold);
   border: none;
 }
+
 .button_transparent {
   background: transparent;
   border: 1.3px solid var(--white);
 }
+
 .button_thin {
   padding-top: 7px;
   padding-bottom: 7px;
 }
+
 .button_thick {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .button_narrow {
   max-width: 200px;
 }
+
 /* BUTTON MIXES */
 .nav_button {
   display: none;
@@ -49,58 +56,67 @@
 .types_button {
   position: absolute;
   bottom: -28px;
-  left: 0;
+  left: -15px;
   padding: 11px;
 }
+
 .timeline_button {
   margin-top: 40px;
 }
-.types_button {
-  left: -15px;
-}
+
 .location_button {
-  margin: 20px auto 0 auto;
   width: 100%;
   max-width: 340px;
+  margin: 20px auto 0 auto;
 }
+
 /* BUTTON MEDIA */
 @media screen and (min-width: 576px) {
   .button_fill {
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    box-shadow: 0 5px 15px rgba(227, 184, 115, 0.15);
   }
+
   .button_fill:hover,
   .button_fill:focus {
     box-shadow: none;
   }
+
   .nav_button {
     display: block;
     width: 160px;
     font-size: 14px;
   }
+
   .header-content_button {
     max-width: 210px;
     margin-left: 1em;
   }
+
   .header-content_button:first-child {
     margin-left: 0;
   }
+
   .timeline_button {
     margin-left: auto;
   }
+
   .location_button {
-    margin-top: 30px;
     padding: 1em 5em;
+    margin-top: 30px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .control_button,
   .location_button {
     width: 200px;
   }
+
   .timeline_button {
     margin-top: 60px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .button_thin {
     padding-top: 12px;

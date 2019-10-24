@@ -7,62 +7,68 @@
 }
 
 .form__caption {
-  text-align: center;
   margin: 0 auto;
   font-size: 1.2em;
+  text-align: center;
 }
+
 .form__label {
-  padding: 5px 0 0;
-  display: block;
   top: 0;
   right: 100%;
+  display: block;
+  padding: 5px 0 0;
 }
 
 .form__input {
   display: block;
   width: 100%;
-  border: none;
   padding: 0 0 5px 0;
   color: inherit;
+  background: inherit;
+  border: none;
   border-bottom: 2px solid var(--white);
   transition: all 0.2s;
-  background: inherit;
 }
+
 .form__input::placeholder {
   color: inherit;
 }
 
 .form__input:focus {
-  outline: none;
   border-bottom: 2px solid var(--gold);
+  outline: none;
 }
+
 /* FORM MIXES */
 .form_dark {
-  background: var(--dark);
   color: var(--white);
+  background: var(--dark);
 }
+
 .form_light {
-  background: #fff;
   color: var(--dark);
+  background: #fff;
 }
+
 .form_control {
   margin-top: 30px;
   background: var(--dark-gray);
 }
+
 .form_control .form__label {
   margin-top: 10px;
 }
+
 .form_timeline {
   width: 100%;
   max-width: 430px;
   padding: 2em 2em;
 }
+
 .form_timeline .form__caption {
   padding: 20px 0;
 }
-.form_location .form__label {
-  margin-top: 35px;
-}
+
 .form_location .form__label {
   margin-top: 25px;
 }
@@ -73,9 +79,11 @@
   padding: 2em 0.5em;
   margin: 30px auto 30px auto;
 }
+
 .form_location .form__caption {
   text-transform: uppercase;
 }
+
 .form_location textarea {
   height: 2em;
 }
@@ -85,51 +93,63 @@
   .form {
     font-size: 18px;
   }
+
   .form_location {
-    padding: 2em 5em;
     align-items: center;
+    padding: 2em 5em;
   }
+
   .location_form-label-wrapper {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
+
   .form_location .form__label {
     width: 48%;
   }
+
   .form_location .form__label_textarea {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 992px) {
   .form_location {
+    z-index: 2;
     padding: 2em 10em;
     margin-top: -200px;
-    z-index: 2;
   }
+
   .form_control.form_dark {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background: #fff;
     color: var(--dark);
+    background: #fff;
   }
+
   .form_control .form__label {
     width: 30%;
   }
+
   .form_timeline {
     max-width: 40%;
     padding: 2em 4em;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12),
-      0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.12),
+      0 2px 2px rgba(0, 0, 0, 0.12),
+      0 4px 4px rgba(0, 0, 0, 0.12),
+      0 8px 8px rgba(0, 0, 0, 0.12),
+      0 16px 16px rgba(0, 0, 0, 0.12);
   }
+
   .form_timeline .form__caption {
     padding: 35px 0 20px 0;
     font-size: 1.7em;
   }
+
   .form_timeline .form__label {
     padding-top: 20px;
   }
-}
-@media screen and (min-width: 1200px) {
 }

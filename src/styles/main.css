@@ -1,9 +1,7 @@
 @import '../../node_modules/normalize.css/normalize.css';
 @import '../../node_modules/swiper/css/swiper.min.css';
-
 @import './fonts.css';
 @import './properties.css';
-
 @import './sections/page.css';
 @import './container.css';
 @import './not-working-yet.css';
@@ -34,6 +32,7 @@
 @import './stub.css';
 
 /* CSS DEGUB SNIPPET  */
+
 /* * {
   background-color: rgba(255, 0, 0, 0.2) !important;
 }

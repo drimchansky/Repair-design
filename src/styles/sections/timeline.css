@@ -2,6 +2,7 @@
 .timeline {
   padding: 30px 0;
 }
+
 .timeline__list {
   display: none;
 }
@@ -9,6 +10,7 @@
 /* TIMELINE */
 @media screen and (min-width: 576px) {
 }
+
 @media screen and (min-width: 992px) {
   /* TIMELINE */
   .timeline {
@@ -18,78 +20,92 @@
     background-position-x: 15%;
     background-position-y: 25%;
   }
+
   .timeline__list {
     display: flex;
     flex-direction: column;
-    list-style-type: none;
     align-items: flex-end;
     width: 60%;
+    list-style-type: none;
   }
+
   .timeline__item {
-    text-align: left;
     position: relative;
     max-width: 400px;
     padding-left: 5px;
+    text-align: left;
   }
-  .timeline__item:before {
-    content: attr(data-num);
-    font-size: 1.3em;
-    font-family: var(--title-font);
+
+  .timeline__item::before {
     position: absolute;
-    color: #fff;
-    padding: 0.6em;
-    border-radius: 50%;
-    background: var(--gold);
-    left: -65px;
     top: -50%;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12),
-      0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+    left: -65px;
+    padding: 0.6em;
+    font-family: var(--title-font);
+    font-size: 1.3em;
+    color: #fff;
+    content: attr(data-num);
+    background: var(--gold);
+    border-radius: 50%;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.12),
+      0 4px 4px rgba(0, 0, 0, 0.12),
+      0 16px 16px rgba(0, 0, 0, 0.12);
   }
 
   [data-num='01'] {
     margin-right: 20px;
   }
+
   [data-num='02'] {
     margin: 105px 227px 0 0;
   }
+
   [data-num='03'] {
     margin: 133px 156px 0 0;
   }
+
   [data-num='04'] {
-    margin: 129px 78px 0 0;
     max-width: 220px;
+    margin: 129px 78px 0 0;
   }
-  [data-num='01']:before,
-  [data-num='04']:before {
+
+  [data-num='01']::before,
+  [data-num='04']::before {
     top: 0;
   }
+
   .timeline__figure_one {
     position: absolute;
     top: -103px;
     left: -452px;
     transform: rotate(12deg);
   }
+
   .timeline__figure_two {
     position: absolute;
-    fill: var(--gold);
     top: 50px;
     left: -7px;
+    fill: var(--gold);
     transform: rotate(-56deg);
   }
+
   .timeline__figure_three {
     position: absolute;
-    fill: var(--gold);
     top: 46px;
     left: -23px;
+    fill: var(--gold);
     transform: rotate(-38deg);
   }
+
   .timeline__figure_four {
     position: absolute;
-    fill: var(--gold);
     top: 52px;
     left: -48px;
+    fill: var(--gold);
     transform: rotate(-24deg);
   }
+
   .timeline__figure_five {
     position: absolute;
     top: 69px;
@@ -97,5 +113,6 @@
     transform: rotate(0deg);
   }
 }
+
 @media screen and (min-width: 1200px) {
 }

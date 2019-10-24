@@ -2,81 +2,91 @@
 .header {
   position: relative;
 }
+
 .no-webp .header,
 .no-js .header {
   background: black center / cover url(../../img/header-bg.jpg);
 }
+
 .webp .header {
   background: black center / cover url(../../img/header-bg.webp);
 }
+
 .header__instagram-link {
   display: none;
 }
+
 .header__scroll-down {
   display: none;
 }
+
 /* HEADER MEDIA */
 @media screen and (min-width: 576px) {
 }
+
 @media screen and (min-width: 992px) {
   .header__instagram-link {
-    text-decoration: none;
-    writing-mode: vertical-lr;
-    letter-spacing: 1px;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--caption-font);
-    display: flex;
     position: absolute;
-    left: 0;
     top: 0;
-    height: 100%;
-    background: var(--dark);
-    width: 80px;
+    left: 0;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 100%;
+    font-family: var(--caption-font);
     color: var(--gold);
+    text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    background: var(--dark);
+    writing-mode: vertical-lr;
   }
-  .header__instagram-link:after {
-    content: '\2192';
+
+  .header__instagram-link::after {
     margin-top: 20px;
-    transition: all 0.3s;
     font-size: 2em;
+    content: '\2192';
+    transition: all 0.3s;
   }
-  .header__instagram-link:hover.header__instagram-link:after,
-  .header__instagram-link:focus.header__instagram-link:after {
+
+  .header__instagram-link:hover.header__instagram-link::after,
+  .header__instagram-link:focus.header__instagram-link::after {
     transform: translateY(15px);
   }
 
   .header__scroll-down {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 11;
-    background: var(--dark);
     position: absolute;
-    left: 0;
     bottom: -50px;
-    height: 100px;
+    left: 0;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 250px;
-    text-transform: uppercase;
+    height: 100px;
     font-family: var(--title-font);
-    text-decoration: none;
     color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
     letter-spacing: 1px;
+    background: var(--dark);
   }
+
   .header__scroll-down span {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 30px;
-    font-weight: bold;
-    margin-left: 15px;
+    justify-content: center;
     width: 30px;
-    border-radius: 50%;
+    height: 30px;
+    margin-left: 15px;
+    font-weight: bold;
     color: var(--gold);
     border: 1.5px solid var(--gold);
+    border-radius: 50%;
   }
 }
+
 @media screen and (min-width: 1200px) {
 }

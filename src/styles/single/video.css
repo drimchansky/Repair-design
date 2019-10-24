@@ -3,14 +3,16 @@
   width: 100%;
   height: auto;
 }
+
 .video {
   position: relative;
-  margin-top: 30px;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
-  background-color: #000000;
+  margin-top: 30px;
+  background-color: #000;
 }
+
 .video__link {
   position: absolute;
   top: 0;
@@ -18,6 +20,7 @@
   width: 100%;
   height: 100%;
 }
+
 .video__media {
   position: absolute;
   top: 0;
@@ -26,19 +29,20 @@
   height: 100%;
   border: none;
 }
+
 .video__button {
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 1;
   display: none;
-  padding: 0;
   width: 68px;
   height: 48px;
-  border: none;
-  background-color: transparent;
-  transform: translate(-50%, -50%);
+  padding: 0;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transform: translate(-50%, -50%);
 }
 
 .video__button-shape {
@@ -47,7 +51,7 @@
 }
 
 .video__button-icon {
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .video__button:focus {
@@ -56,7 +60,7 @@
 
 .video:hover .video__button-shape,
 .video__button:focus .video__button-shape {
-  fill: #ff0000;
+  fill: #f00;
   fill-opacity: 1;
 }
 
@@ -67,19 +71,23 @@
 .video--enabled .video__button {
   display: block;
 }
+
 /* VIDEO MEDIA */
 @media screen and (min-width: 576px) {
   .video-wrapper {
     width: 85%;
   }
+
   .video {
     margin-top: 60px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .video-wrapper {
     width: 70%;
   }
 }
+
 @media screen and (min-width: 1200px) {
 }

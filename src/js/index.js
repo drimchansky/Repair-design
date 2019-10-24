@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 import Videos from './video';
-import Exhib from './Exhib';
+import './exhib';
 import './steps';
 import './stub';
 
@@ -24,5 +24,4 @@ const mySwiper = new Swiper('.swiper-container', {
   },
 });
 
-Videos();
-Exhib();
+setTimeout(Videos(), 2000);

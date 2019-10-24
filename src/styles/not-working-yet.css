@@ -1,15 +1,15 @@
 @media screen and (min-width: 992px) {
-  .not-working-yet:hover:after {
-    content: attr(data-title);
-    display: block;
+  .not-working-yet:hover::after {
     position: absolute;
-    text-transform: none;
-    left: 0;
     top: -50px;
+    left: 0;
+    display: block;
     width: 270px;
     font-family: var(--main-font);
-    color: var(--white);
     font-size: 25px;
+    color: var(--white);
+    text-transform: none;
+    content: attr(data-title);
     opacity: 0.5;
   }
 }

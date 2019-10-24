@@ -1,76 +1,92 @@
 /* PROJECT-STAT */
 .project-stat {
-  list-style-type: none;
   padding: 0;
   text-align: center;
+  list-style-type: none;
 }
+
 .project-stat_big {
   font-size: 20px;
 }
+
 .project-stat_small {
   font-size: 16px;
 }
+
 .project-stat_big .ptoject-stat__header {
   font-size: 1.3em;
 }
+
 .project-stat_small .ptoject-stat__header {
   font-size: 0.82em;
 }
+
 .project-stat_big .project-stat__description {
   font-size: 0.8em;
 }
+
 .project-stat_small .project-stat__description {
   font-size: 0.9em;
 }
 
 .ptoject-stat__header {
-  color: var(--gold);
   font-family: var(--title-font);
+  color: var(--gold);
   text-transform: uppercase;
 }
+
 .project-stat__description {
-  color: var(--white);
-  margin: 0.5em auto 0 auto;
   max-width: 300px;
+  margin: 0.5em auto 0 auto;
+  color: var(--white);
 }
 
 /* PROJECT STAT MIXES */
 .project-card_project-stat.project-stat_small {
 }
+
 .project-card_project-stat.project-stat_big {
   grid-column: 1 / span 2;
 }
+
 /* PROJET-STAT MEDIA */
 @media screen and (min-width: 576px) {
   .project-card_project-stat.project-stat_big {
-    grid-column: 1;
     grid-row: 1 / span 2;
+    grid-column: 1;
   }
+
   .project-stat_small .ptoject-stat__header,
   .project-stat_small .project-stat__description {
-    text-align: left;
     padding-left: 20px;
+    text-align: left;
   }
 }
+
 @media screen and (min-width: 992px) {
   .project-stat_big {
     font-size: 25px;
   }
+
   .project-stat_small {
     font-size: 20px;
   }
+
   .project-card_project-stat.project-stat_big {
-    text-align: left;
     grid-column: 1 / span 2;
+    text-align: left;
   }
+
   .project-stat_small .ptoject-stat__header,
   .project-stat_small .project-stat__description {
-    padding-left: 0;
     width: 90%;
+    padding-left: 0;
   }
+
   .project-stat__description {
     margin: 0.5em 0 0 0;
   }
 }
+
 @media screen and (min-width: 1200px) {
 }

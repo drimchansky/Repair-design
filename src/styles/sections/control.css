@@ -1,28 +1,31 @@
 /* CONTROL */
 .control {
-  background: linear-gradient(to bottom, var(--dark-gray) 95%, #fff 5%);
-  font-size: 16px;
   padding: 10px 0;
+  font-size: 16px;
+  background: linear-gradient(to bottom, var(--dark-gray) 95%, #fff 5%);
 }
+
 .control__description {
   position: relative;
-  margin-top: 4em;
-  text-align: center;
   max-width: 650px;
-  color: var(--white);
   padding: 0 10px;
+  margin-top: 4em;
+  color: var(--white);
+  text-align: center;
 }
-.control__description:after {
-  content: '';
+
+.control__description::after {
   position: absolute;
   top: -25px;
   left: 50%;
-  transform: translateX(-50%);
   width: 70px;
   height: 2px;
-  border-radius: 20%;
+  content: '';
   background: var(--gold);
+  border-radius: 20%;
+  transform: translateX(-50%);
 }
+
 /* CONTROL MEDIA */
 @media screen and (min-width: 576px) {
   .control {
@@ -30,16 +33,20 @@
     background: linear-gradient(to bottom, var(--dark-gray) 94%, #fff 6%);
   }
 }
+
 @media screen and (min-width: 992px) {
   .control {
     font-size: 20px;
+
     /* background: url(../../img/city-bg.png) no-repeat 0px -120%,
       linear-gradient(to top, #fff 60%, var(--dark-gray) 40%); */
     background: linear-gradient(to top, #fff 60%, var(--dark-gray) 40%);
   }
+
   .control__description {
     color: var(--dark);
   }
 }
+
 @media screen and (min-width: 1200px) {
 }

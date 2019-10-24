@@ -10,15 +10,16 @@
   -moz-appearance: none;
   appearance: none;
 }
+
 .check__input:focus {
   outline: none;
 }
 
 .check__box {
   position: absolute;
-  margin-left: -1.2em;
   width: 1em;
   height: 1em;
+  margin-left: -1.2em;
 }
 
 .check__focus {
@@ -30,15 +31,16 @@
   stroke: var(--gold);
   stroke-width: 1px;
 }
+
 .form_dark .check__square {
   fill: var(--dark-gray);
 }
 
 .check__mark {
-  fill: none;
-  stroke: #ffffff;
-  stroke-width: 2px;
   opacity: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2px;
 }
 
 /* Checked */
@@ -66,14 +68,17 @@
 .check__input:checked:disabled + * .check__square {
   fill: #9b9b9b;
 }
+
 /* CHECK MIXES */
 .check_types {
   margin-top: 15px;
 }
+
 .check_timeline,
 .check_location {
   margin-top: 25px;
 }
+
 /* CHECK MEDIA */
 @media screen and (min-width: 992px) {
   .check_types {
@@ -81,12 +86,15 @@
     width: 100%;
     text-align: center;
   }
+
   .form_dark.form_control .check__square {
     fill: white;
   }
+
   .form_dark.form_control .check__mark {
     stroke: white;
   }
+
   .form_dark.form_control .check__input:checked + * .check__square {
     fill: var(--gold);
   }
